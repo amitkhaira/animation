@@ -189,8 +189,16 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
 
   // Dragging / Trimming state
   const rulerRef = useRef<HTMLDivElement | null>(null);
-  const scrollContainerRef = useRef<HTMLDivElement | null>(null);
+  const rulerContainerRef = useRef<HTMLDivElement | null>(null);
+  const timelineScrollRef = useRef<HTMLDivElement | null>(null);
   const [dragState, setDragState] = useState<DragState | null>(null);
+
+  // Sync horizontal scrolling of ruler with unified timeline tracks body
+  const handleTimelineScroll = (e: React.UIEvent<HTMLDivElement>) => {
+    if (rulerContainerRef.current) {
+      rulerContainerRef.current.scrollLeft = e.currentTarget.scrollLeft;
+    }
+  };
 
   // Sync external selection (from stage clicks)
   useEffect(() => {
@@ -699,264 +707,38 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
               Selected: <b>{selectedClip.type.toUpperCase()}</b> ({selectedClip.id})
             </span>
           )}
-          <Lock className="w-3 h-3" />
+          {selectedClip && isClipLocked(selectedClip.type, selectedClip.id) ? (
+            <span title="Selected item is locked" className="w-4 h-4 rounded-full bg-blue-600 text-white flex items-center justify-center shadow-sm">
+              <Lock className="w-2.5 h-2.5 fill-current" />
+            </span>
+          ) : (
+            <Lock className="w-3.5 h-3.5 text-gray-600" />
+          )}
         </div>
       </div>
 
       {/* ============================================================ */}
-      {/* 3. MULTI-TRACK TIMELINE GRID & TRACKS (PIXEL-ACCURATE SCROLL) */}
+      {/* 3. MULTI-TRACK TIMELINE (UNIFIED SINGLE ROW & SCROLL CONTAINER) */}
       {/* ============================================================ */}
-      <div className="flex-1 flex overflow-hidden">
-        {/* Left Track Column (Track Names, 👁, 🔒, ✕) */}
-        <div className="w-36 border-r border-[#262a38] bg-[#14161f] flex flex-col overflow-y-auto shrink-0 select-none">
-          {/* Header */}
-          <div className="h-6 border-b border-[#262a38] px-2 flex items-center justify-between text-[10px] font-mono text-gray-500 italic">
-            <span>Tracks</span>
-            <span className="text-[9px] text-gray-600 font-sans">{pxPerSec}px/s</span>
+      <div className="flex-1 flex flex-col overflow-hidden">
+        {/* Top Header Row: Left Tracks Label (w-48) + Right Time Ruler */}
+        <div className="h-6 flex shrink-0 border-b border-[#262a38] bg-[#12141c]">
+          {/* Left Tracks Label */}
+          <div className="w-48 shrink-0 border-r border-[#262a38] px-2.5 flex items-center justify-between text-[10px] font-mono text-gray-400 bg-[#12141c] z-30 select-none">
+            <span className="font-semibold text-gray-300">Tracks</span>
+            <span className="text-[9px] text-gray-500 font-sans">{pxPerSec}px/s</span>
           </div>
 
-          {/* Empty Tracks Hint */}
-          {!hasAnyTracks && (
-            <div className="p-3 text-[11px] text-gray-500 italic text-center">
-              No tracks added yet. Add characters, media, background or audio to timeline.
-            </div>
-          )}
-
-          {/* 1. Camera Track Header (Only if camera track exists) */}
-          {cameraTrack && (
-            <div
-              onClick={() => setSelectedClip({ type: 'camera', id: cameraTrack.id })}
-              className={`h-8 border-b border-[#222530] px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors ${
-                selectedClip?.type === 'camera' ? 'bg-[#853e1a]/40 text-amber-200' : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              <div className="flex items-center space-x-1 truncate max-w-[70px]">
-                <span className="text-gray-500 text-[10px]">⋮⋮</span>
-                <span className="truncate font-semibold">{cameraTrack.name || 'Camera'}</span>
-              </div>
-              <div className="flex items-center space-x-1 text-gray-500" onClick={(e) => e.stopPropagation()}>
-                <button
-                  onClick={() => onToggleTrackVisibility?.('camera', cameraTrack.id)}
-                  className="hover:text-white"
-                  title={cameraTrack.isVisible === false ? "Show" : "Hide"}
-                >
-                  {cameraTrack.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
-                </button>
-                <button
-                  onClick={() => onToggleTrackLock?.('camera', cameraTrack.id)}
-                  className="hover:text-white"
-                  title={cameraTrack.isLocked ? "Unlock" : "Lock"}
-                >
-                  {cameraTrack.isLocked ? <Lock className="w-2.5 h-2.5 text-amber-400" /> : <Unlock className="w-2.5 h-2.5" />}
-                </button>
-                <button
-                  onClick={() => {
-                    onDeleteCameraTrack?.();
-                    if (selectedClip?.type === 'camera') setSelectedClip(null);
-                  }}
-                  className="hover:text-red-400"
-                  title="Delete Camera Track"
-                >
-                  <X className="w-2.5 h-2.5" />
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* 2. Background Track Header (Only if background track exists) */}
-          {backgroundTrack && (
-            <div
-              onClick={() => setSelectedClip({ type: 'background', id: backgroundTrack.id })}
-              className={`h-8 border-b border-[#222530] px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors ${
-                selectedClip?.type === 'background' ? 'bg-purple-950/60 text-purple-200' : 'text-gray-400 hover:text-white'
-              }`}
-            >
-              <div className="flex items-center space-x-1 truncate max-w-[70px]">
-                <span className="text-gray-500 text-[10px]">⋮⋮</span>
-                <span className="truncate font-medium">{backgroundTrack.name || 'Background'}</span>
-              </div>
-              <div className="flex items-center space-x-1 text-gray-500" onClick={(e) => e.stopPropagation()}>
-                <button
-                  onClick={() => onToggleTrackVisibility?.('background', backgroundTrack.id)}
-                  className="hover:text-white"
-                  title={backgroundTrack.isVisible === false ? "Show on Stage" : "Hide from Stage"}
-                >
-                  {backgroundTrack.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
-                </button>
-                <button
-                  onClick={() => onToggleTrackLock?.('background', backgroundTrack.id)}
-                  className="hover:text-white"
-                  title={backgroundTrack.isLocked ? "Unlock Track" : "Lock Track"}
-                >
-                  {backgroundTrack.isLocked ? <Lock className="w-2.5 h-2.5 text-amber-400" /> : <Unlock className="w-2.5 h-2.5" />}
-                </button>
-                <button
-                  onClick={() => {
-                    onDeleteBackgroundTrack?.();
-                    if (selectedClip?.type === 'background') setSelectedClip(null);
-                  }}
-                  className="hover:text-red-400"
-                  title="Delete Background"
-                >
-                  <X className="w-2.5 h-2.5" />
-                </button>
-              </div>
-            </div>
-          )}
-
-          {/* 3. Audio Tracks Headers */}
-          {audioTracks.map((audio) => {
-            const isSelected = selectedClip?.type === 'audio' && selectedClip.id === audio.id;
-            return (
-              <div
-                key={audio.id}
-                onClick={() => {
-                  setSelectedClip({ type: 'audio', id: audio.id });
-                  onSelectAudioTrack?.(audio.id);
-                }}
-                className={`h-8 border-b border-[#222530] px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors ${
-                  isSelected ? 'bg-emerald-950/60 text-emerald-200' : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                <div className="flex items-center space-x-1 truncate max-w-[70px]">
-                  <span className="text-gray-500 text-[10px]">⋮⋮</span>
-                  <span className="truncate font-semibold">{audio.name}</span>
-                </div>
-                <div className="flex items-center space-x-1 text-gray-500" onClick={(e) => e.stopPropagation()}>
-                  <button
-                    onClick={() => onToggleTrackVisibility?.('audio', audio.id)}
-                    className="hover:text-white"
-                    title={audio.isMuted ? "Unmute" : "Mute"}
-                  >
-                    {audio.isMuted ? <VolumeX className="w-2.5 h-2.5 text-gray-600" /> : <Volume2 className="w-2.5 h-2.5" />}
-                  </button>
-                  <button
-                    onClick={() => onToggleTrackLock?.('audio', audio.id)}
-                    className="hover:text-white"
-                    title={audio.isLocked ? "Unlock" : "Lock"}
-                  >
-                    {audio.isLocked ? <Lock className="w-2.5 h-2.5 text-amber-400" /> : <Unlock className="w-2.5 h-2.5" />}
-                  </button>
-                  <button
-                    onClick={() => {
-                      onDeleteAudioTrack?.(audio.id);
-                      if (selectedClip?.id === audio.id) setSelectedClip(null);
-                    }}
-                    className="hover:text-red-400"
-                    title="Delete Audio"
-                  >
-                    <X className="w-2.5 h-2.5" />
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-
-          {/* 4. Character Tracks Headers */}
-          {characters.map((char) => {
-            const isSelected = selectedClip?.type === 'character' && selectedClip.id === char.instanceId;
-            return (
-              <div
-                key={char.instanceId}
-                onClick={() => {
-                  setSelectedClip({ type: 'character', id: char.instanceId });
-                  onSelectCharacterInstance?.(char.instanceId);
-                }}
-                className={`h-8 border-b border-[#222530] px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors ${
-                  isSelected ? 'bg-blue-950/60 text-blue-200' : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                <div className="flex items-center space-x-1 truncate max-w-[70px]">
-                  <span className="text-gray-500 text-[10px]">⋮⋮</span>
-                  <span className="truncate font-medium">{char.name}</span>
-                </div>
-                <div className="flex items-center space-x-1 text-gray-500" onClick={(e) => e.stopPropagation()}>
-                  <button
-                    onClick={() => onToggleTrackVisibility?.('character', char.instanceId)}
-                    className="hover:text-white"
-                    title={char.isVisible === false ? "Show on Stage" : "Hide from Stage"}
-                  >
-                    {char.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
-                  </button>
-                  <button
-                    onClick={() => onToggleTrackLock?.('character', char.instanceId)}
-                    className="hover:text-white"
-                    title={char.isLocked ? "Unlock" : "Lock"}
-                  >
-                    {char.isLocked ? <Lock className="w-2.5 h-2.5 text-amber-400" /> : <Unlock className="w-2.5 h-2.5" />}
-                  </button>
-                  <button
-                    onClick={() => {
-                      onDeleteCharacter?.(char.instanceId);
-                      if (selectedClip?.id === char.instanceId) setSelectedClip(null);
-                    }}
-                    className="hover:text-red-400"
-                    title="Delete Character"
-                  >
-                    <X className="w-2.5 h-2.5" />
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-
-          {/* 5. Media / Image Tracks Headers */}
-          {mediaLayers.map((media) => {
-            const isSelected = selectedClip?.type === 'media' && selectedClip.id === media.instanceId;
-            return (
-              <div
-                key={media.instanceId}
-                onClick={() => {
-                  setSelectedClip({ type: 'media', id: media.instanceId });
-                  onSelectMediaLayer?.(media.instanceId);
-                }}
-                className={`h-8 border-b border-[#222530] px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors ${
-                  isSelected ? 'bg-teal-950/60 text-teal-200' : 'text-gray-400 hover:text-white'
-                }`}
-              >
-                <div className="flex items-center space-x-1 truncate max-w-[70px]">
-                  <span className="text-gray-500 text-[10px]">⋮⋮</span>
-                  <span className="truncate">{media.name}</span>
-                </div>
-                <div className="flex items-center space-x-1 text-gray-500" onClick={(e) => e.stopPropagation()}>
-                  <button
-                    onClick={() => onToggleTrackVisibility?.('media', media.instanceId)}
-                    className="hover:text-white"
-                    title={media.isVisible === false ? "Show on Stage" : "Hide from Stage"}
-                  >
-                    {media.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
-                  </button>
-                  <button
-                    onClick={() => onToggleTrackLock?.('media', media.instanceId)}
-                    className="hover:text-white"
-                    title={media.isLocked ? "Unlock" : "Lock"}
-                  >
-                    {media.isLocked ? <Lock className="w-2.5 h-2.5 text-amber-400" /> : <Unlock className="w-2.5 h-2.5" />}
-                  </button>
-                  <button
-                    onClick={() => {
-                      onDeleteMediaLayer?.(media.instanceId);
-                      if (selectedClip?.id === media.instanceId) setSelectedClip(null);
-                    }}
-                    className="hover:text-red-400"
-                    title="Delete Media"
-                  >
-                    <X className="w-2.5 h-2.5" />
-                  </button>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Right Time Ruler & Multi-Track Clips Area (Horizontally Scrollable) */}
-        <div ref={scrollContainerRef} className="flex-1 flex flex-col overflow-x-auto relative bg-[#0f1118]">
-          <div style={{ width: `${totalTrackWidth}px`, minWidth: '100%' }} className="relative flex flex-col flex-1">
-            {/* Time Ruler (0, 1, 2, 3 ... 140s) */}
+          {/* Right Time Ruler container (overflow-x-hidden, scrollLeft synced with timeline body) */}
+          <div
+            ref={rulerContainerRef}
+            className="flex-1 overflow-x-hidden overflow-y-hidden relative bg-[#12141c]"
+          >
             <div
               ref={rulerRef}
               onMouseDown={handleRulerMouseDown}
-              className="h-6 border-b border-[#262a38] bg-[#12141c] relative cursor-pointer flex items-center select-none"
+              style={{ width: `${totalTrackWidth}px`, minWidth: '100%' }}
+              className="h-full relative cursor-pointer flex items-center select-none"
             >
               {/* Ticks for each second */}
               {Array.from({ length: totalDurationSeconds + 1 }).map((_, s) => {
@@ -989,24 +771,89 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                 </div>
               </div>
             </div>
+          </div>
+        </div>
 
-            {/* Clips Grid Container */}
-            <div className="flex-1 overflow-y-auto relative bg-[#0c0e14]">
-              {/* Vertical Playhead Line running across all tracks */}
-              <div
-                className="absolute top-0 bottom-0 w-0.5 bg-blue-400 z-30 pointer-events-none shadow-[0_0_8px_rgba(96,165,250,0.8)]"
-                style={{ left: `${currentTimeSeconds * pxPerSec}px` }}
-              />
+        {/* Unified Tracks Body: SINGLE SCROLL CONTAINER (Left Header and Right Clip Lane in the SAME Row) */}
+        <div
+          ref={timelineScrollRef}
+          onScroll={handleTimelineScroll}
+          className="flex-1 overflow-x-auto overflow-y-auto relative bg-[#0c0e14] scrollbar-thin scrollbar-thumb-gray-700 select-none"
+        >
+          <div
+            style={{ width: `${192 + totalTrackWidth}px`, minWidth: '100%' }}
+            className="relative flex flex-col min-h-full"
+          >
+            {/* Vertical Playhead Line running across all tracks */}
+            <div
+              className="absolute top-0 bottom-0 w-0.5 bg-blue-400 z-30 pointer-events-none shadow-[0_0_8px_rgba(96,165,250,0.8)]"
+              style={{ left: `${192 + currentTimeSeconds * pxPerSec}px` }}
+            />
 
-              {/* 1. CAMERA TRACK STRIP (BROWN) */}
-              {cameraTrack && (() => {
-                const isSelected = selectedClip?.type === 'camera';
-                const camStart = cameraTrack.startTime || 0;
-                const camDur = cameraTrack.duration || 6.7;
-                const isLocked = Boolean(cameraTrack.isLocked);
+            {/* Empty Tracks Hint */}
+            {!hasAnyTracks && (
+              <div className="p-6 text-[11px] text-gray-500 italic text-center">
+                No tracks added yet. Add characters, media, background or audio to timeline.
+              </div>
+            )}
 
-                return (
-                  <div className="h-8 border-b border-[#1f222e] p-0.5 relative flex items-center">
+            {/* 1. CAMERA TRACK ROW (SINGLE ROW: STICKY LEFT HEADER + RIGHT STRIP) */}
+            {cameraTrack && (() => {
+              const isSelected = selectedClip?.type === 'camera';
+              const camStart = cameraTrack.startTime || 0;
+              const camDur = cameraTrack.duration || 6.7;
+              const isLocked = Boolean(cameraTrack.isLocked);
+
+              return (
+                <div className="h-8 border-b border-[#1f222e] flex relative items-center hover:bg-white/[0.02] transition-colors">
+                  {/* Left Track Header (Sticky left-0, stays in place horizontally while scrolling) */}
+                  <div
+                    onClick={() => setSelectedClip({ type: 'camera', id: cameraTrack.id })}
+                    className={`w-48 shrink-0 h-full border-r border-[#262a38] bg-[#14161f] sticky left-0 z-20 px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors shadow-[2px_0_6px_rgba(0,0,0,0.4)] ${
+                      isSelected ? 'bg-[#853e1a]/40 text-amber-200' : 'text-gray-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-1.5 truncate max-w-[105px]">
+                      <span className="text-gray-500 text-[10px] select-none">⋮⋮</span>
+                      <span className="truncate font-semibold text-gray-200">{cameraTrack.name || 'Camera'}</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-gray-500 shrink-0" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => onToggleTrackVisibility?.('camera', cameraTrack.id)}
+                        className="w-4 h-4 text-gray-500 hover:text-white flex items-center justify-center transition-colors"
+                        title={cameraTrack.isVisible === false ? "Show" : "Hide"}
+                      >
+                        {cameraTrack.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => onToggleTrackLock?.('camera', cameraTrack.id)}
+                        className={`transition-all flex items-center justify-center shrink-0 ${
+                          cameraTrack.isLocked
+                            ? 'w-4 h-4 rounded-full bg-blue-600 text-white shadow-sm hover:bg-blue-500'
+                            : 'w-4 h-4 text-gray-500 hover:text-white'
+                        }`}
+                        title={cameraTrack.isLocked ? "Unlock Camera" : "Lock Camera"}
+                      >
+                        {cameraTrack.isLocked ? <Lock className="w-2.5 h-2.5 fill-current" /> : <Unlock className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => {
+                          onDeleteCameraTrack?.();
+                          if (selectedClip?.type === 'camera') setSelectedClip(null);
+                        }}
+                        className="w-4 h-4 text-gray-500 hover:text-red-400 flex items-center justify-center transition-colors"
+                        title="Delete Camera Track"
+                      >
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Right Track Clip Lane */}
+                  <div
+                    style={{ width: `${totalTrackWidth}px` }}
+                    className="h-full relative shrink-0 p-0.5 flex items-center"
+                  >
                     <div
                       onClick={(e) => {
                         e.stopPropagation();
@@ -1057,7 +904,7 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                         <CameraIcon className="w-3 h-3 text-amber-300 shrink-0" />
                         <span className="truncate">Camera</span>
                         <span className="text-[9px] text-amber-300 font-mono">({camDur.toFixed(1)}s)</span>
-                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0" />}
+                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0 ml-1" />}
                       </div>
 
                       {/* Right Handle Tab > */}
@@ -1082,18 +929,67 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       )}
                     </div>
                   </div>
-                );
-              })()}
+                </div>
+              );
+            })()}
 
-              {/* 2. BACKGROUND TRACK STRIP (PURPLE / INDIGO) */}
-              {backgroundTrack && (() => {
-                const isSelected = selectedClip?.type === 'background';
-                const bgStart = backgroundTrack.startTime || 0;
-                const bgDur = backgroundTrack.duration || totalDurationSeconds;
-                const isLocked = Boolean(backgroundTrack.isLocked);
+            {/* 2. BACKGROUND TRACK ROW (SINGLE ROW: STICKY LEFT HEADER + RIGHT STRIP) */}
+            {backgroundTrack && (() => {
+              const isSelected = selectedClip?.type === 'background';
+              const bgStart = backgroundTrack.startTime || 0;
+              const bgDur = backgroundTrack.duration || totalDurationSeconds;
+              const isLocked = Boolean(backgroundTrack.isLocked);
 
-                return (
-                  <div className="h-8 border-b border-[#1f222e] p-0.5 relative flex items-center">
+              return (
+                <div className="h-8 border-b border-[#1f222e] flex relative items-center hover:bg-white/[0.02] transition-colors">
+                  {/* Left Track Header */}
+                  <div
+                    onClick={() => setSelectedClip({ type: 'background', id: backgroundTrack.id })}
+                    className={`w-48 shrink-0 h-full border-r border-[#262a38] bg-[#14161f] sticky left-0 z-20 px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors shadow-[2px_0_6px_rgba(0,0,0,0.4)] ${
+                      isSelected ? 'bg-purple-950/60 text-purple-200' : 'text-gray-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-1.5 truncate max-w-[105px]">
+                      <span className="text-gray-500 text-[10px] select-none">⋮⋮</span>
+                      <span className="truncate font-medium text-gray-200">{backgroundTrack.name || 'Background'}</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-gray-500 shrink-0" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => onToggleTrackVisibility?.('background', backgroundTrack.id)}
+                        className="w-4 h-4 text-gray-500 hover:text-white flex items-center justify-center transition-colors"
+                        title={backgroundTrack.isVisible === false ? "Show on Stage" : "Hide from Stage"}
+                      >
+                        {backgroundTrack.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => onToggleTrackLock?.('background', backgroundTrack.id)}
+                        className={`transition-all flex items-center justify-center shrink-0 ${
+                          backgroundTrack.isLocked
+                            ? 'w-4 h-4 rounded-full bg-blue-600 text-white shadow-sm hover:bg-blue-500'
+                            : 'w-4 h-4 text-gray-500 hover:text-white'
+                        }`}
+                        title={backgroundTrack.isLocked ? "Unlock Background" : "Lock Background"}
+                      >
+                        {backgroundTrack.isLocked ? <Lock className="w-2.5 h-2.5 fill-current" /> : <Unlock className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => {
+                          onDeleteBackgroundTrack?.();
+                          if (selectedClip?.type === 'background') setSelectedClip(null);
+                        }}
+                        className="w-4 h-4 text-gray-500 hover:text-red-400 flex items-center justify-center transition-colors"
+                        title="Delete Background"
+                      >
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Right Track Clip Lane */}
+                  <div
+                    style={{ width: `${totalTrackWidth}px` }}
+                    className="h-full relative shrink-0 p-0.5 flex items-center"
+                  >
                     <div
                       onClick={(e) => {
                         e.stopPropagation();
@@ -1116,7 +1012,7 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       } ${
                         isSelected
                           ? 'ring-2 ring-white border-white bg-purple-900 z-20 shadow-lg'
-                          : 'bg-purple-950/80 border border-purple-800 text-purple-100 hover:brightness-110'
+                          : 'bg-purple-950/80 border border-purple-700 text-purple-200 hover:brightness-110'
                       }`}
                     >
                       {/* Left Handle Tab < */}
@@ -1133,7 +1029,7 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                               initialDuration: bgDur
                             });
                           }}
-                          className="absolute left-0 top-0 bottom-0 w-3 bg-white text-black font-extrabold flex items-center justify-center cursor-ew-resize z-30 shadow"
+                          className="absolute left-0 top-0 bottom-0 w-3.5 bg-white text-black font-extrabold flex items-center justify-center cursor-ew-resize z-30 shadow rounded-l"
                           title="Drag to trim start"
                         >
                           &lt;
@@ -1141,10 +1037,10 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       )}
 
                       <div className="flex items-center space-x-1.5 pl-4 pr-4 truncate">
-                        <ImageIcon className="w-3 h-3 text-purple-300 shrink-0" />
-                        <span className="truncate">{backgroundTrack.name || 'Background Image'}</span>
+                        <Sparkles className="w-3 h-3 text-purple-300 shrink-0" />
+                        <span className="truncate font-medium">{backgroundTrack.name || 'Background Scene'}</span>
                         <span className="text-[9px] text-purple-300 font-mono">({bgDur.toFixed(1)}s)</span>
-                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0" />}
+                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0 ml-1" />}
                       </div>
 
                       {/* Right Handle Tab > */}
@@ -1161,7 +1057,7 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                               initialDuration: bgDur
                             });
                           }}
-                          className="absolute right-0 top-0 bottom-0 w-3 bg-white text-black font-extrabold flex items-center justify-center cursor-ew-resize z-30 shadow"
+                          className="absolute right-0 top-0 bottom-0 w-3.5 bg-white text-black font-extrabold flex items-center justify-center cursor-ew-resize z-30 shadow rounded-r"
                           title="Drag to trim end"
                         >
                           &gt;
@@ -1169,19 +1065,70 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       )}
                     </div>
                   </div>
-                );
-              })()}
+                </div>
+              );
+            })()}
 
-              {/* 3. AUDIO TRACKS STRIPS (GREEN WAVEFORM) */}
-              {audioTracks.map((audio) => {
-                const isSelected = selectedClip?.type === 'audio' && selectedClip.id === audio.id;
-                const audioStart = audio.startTime || 0;
-                const audioDur = audio.duration || 15;
-                const isLocked = Boolean(audio.isLocked);
-                const barCount = Math.max(16, Math.min(240, Math.floor((audioDur * pxPerSec) / 8)));
+            {/* 3. AUDIO TRACKS ROWS (SINGLE ROW: STICKY LEFT HEADER + RIGHT STRIP) */}
+            {audioTracks.map((audio) => {
+              const isSelected = selectedClip?.type === 'audio' && selectedClip.id === audio.id;
+              const audioStart = audio.startTime || 0;
+              const audioDur = audio.duration || 10;
+              const isLocked = Boolean(audio.isLocked);
 
-                return (
-                  <div key={audio.id} className="h-8 border-b border-[#1f222e] p-0.5 relative flex items-center">
+              return (
+                <div key={audio.id} className="h-8 border-b border-[#1f222e] flex relative items-center hover:bg-white/[0.02] transition-colors">
+                  {/* Left Track Header */}
+                  <div
+                    onClick={() => {
+                      setSelectedClip({ type: 'audio', id: audio.id });
+                      onSelectAudioTrack?.(audio.id);
+                    }}
+                    className={`w-48 shrink-0 h-full border-r border-[#262a38] bg-[#14161f] sticky left-0 z-20 px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors shadow-[2px_0_6px_rgba(0,0,0,0.4)] ${
+                      isSelected ? 'bg-emerald-950/60 text-emerald-200' : 'text-gray-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-1.5 truncate max-w-[105px]">
+                      <span className="text-gray-500 text-[10px] select-none">⋮⋮</span>
+                      <span className="truncate font-semibold text-gray-200">{audio.name}</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-gray-500 shrink-0" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => onToggleTrackVisibility?.('audio', audio.id)}
+                        className="w-4 h-4 text-gray-500 hover:text-white flex items-center justify-center transition-colors"
+                        title={audio.isMuted ? "Unmute" : "Mute"}
+                      >
+                        {audio.isMuted ? <VolumeX className="w-2.5 h-2.5 text-gray-600" /> : <Volume2 className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => onToggleTrackLock?.('audio', audio.id)}
+                        className={`transition-all flex items-center justify-center shrink-0 ${
+                          audio.isLocked
+                            ? 'w-4 h-4 rounded-full bg-blue-600 text-white shadow-sm hover:bg-blue-500'
+                            : 'w-4 h-4 text-gray-500 hover:text-white'
+                        }`}
+                        title={audio.isLocked ? "Unlock Audio" : "Lock Audio"}
+                      >
+                        {audio.isLocked ? <Lock className="w-2.5 h-2.5 fill-current" /> : <Unlock className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => {
+                          onDeleteAudioTrack?.(audio.id);
+                          if (selectedClip?.id === audio.id) setSelectedClip(null);
+                        }}
+                        className="w-4 h-4 text-gray-500 hover:text-red-400 flex items-center justify-center transition-colors"
+                        title="Delete Audio"
+                      >
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Right Track Clip Lane */}
+                  <div
+                    style={{ width: `${totalTrackWidth}px` }}
+                    className="h-full relative shrink-0 p-0.5 flex items-center"
+                  >
                     <div
                       onClick={(e) => {
                         e.stopPropagation();
@@ -1204,8 +1151,8 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                         isLocked ? 'cursor-not-allowed opacity-85' : 'cursor-move'
                       } ${
                         isSelected
-                          ? 'ring-2 ring-white border-white bg-[#1a853e] z-20 shadow-lg'
-                          : 'bg-[#1a853e] border border-[#22a04e] text-emerald-100 hover:brightness-110'
+                          ? 'ring-2 ring-white border-white bg-emerald-800 z-20 shadow-lg'
+                          : 'bg-emerald-950/80 border border-emerald-700 text-emerald-100 hover:brightness-110'
                       }`}
                     >
                       {/* Left Handle Tab < */}
@@ -1229,27 +1176,24 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                         </div>
                       )}
 
-                      {/* Stylized Audio Waveform Graphic */}
-                      <div className="absolute inset-0 flex items-center space-x-0.5 px-4 opacity-40 pointer-events-none">
-                        {Array.from({ length: barCount }).map((_, i) => (
+                      {/* Audio Waveform visualization */}
+                      <div className="absolute inset-0 flex items-center px-6 opacity-30 pointer-events-none space-x-0.5 overflow-hidden">
+                        {Array.from({ length: 45 }).map((_, i) => (
                           <div
                             key={i}
-                            className="flex-1 bg-white rounded-full"
+                            className="flex-1 bg-emerald-300 rounded-full"
                             style={{
-                              height: `${25 + Math.sin(i * 0.4) * 20 + (i % 4) * 12}%`
+                              height: `${Math.max(15, ((Math.sin(i * 0.7) + 1) / 2) * 85)}%`
                             }}
                           />
                         ))}
                       </div>
 
-                      {/* Title & Icon */}
-                      <div className="relative z-10 flex items-center space-x-1.5 pl-4 pr-4 truncate">
-                        <Volume2 className="w-3 h-3 text-white shrink-0" />
-                        <span className="truncate font-bold text-white text-[10px]">
-                          {audio.name}
-                        </span>
-                        <span className="text-[9px] text-emerald-200 font-mono">({audioDur.toFixed(1)}s)</span>
-                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0" />}
+                      <div className="flex items-center space-x-1.5 pl-4 pr-4 truncate z-10">
+                        <Music className="w-3 h-3 text-emerald-300 shrink-0" />
+                        <span className="truncate font-semibold">{audio.name}</span>
+                        <span className="text-[9px] text-emerald-300 font-mono">({audioDur.toFixed(1)}s)</span>
+                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0 ml-1" />}
                       </div>
 
                       {/* Right Handle Tab > */}
@@ -1274,18 +1218,70 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       )}
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              );
+            })}
 
-              {/* 4. CHARACTER TRACKS STRIPS (BLUE WITH ACTION) */}
-              {characters.map((char) => {
-                const isSelected = selectedClip?.type === 'character' && selectedClip.id === char.instanceId;
-                const charStart = char.startTime || 0;
-                const charDur = char.duration || totalDurationSeconds;
-                const isLocked = Boolean(char.isLocked);
+            {/* 4. CHARACTER TRACKS ROWS (SINGLE ROW: STICKY LEFT HEADER + RIGHT STRIP) */}
+            {characters.map((char) => {
+              const isSelected = selectedClip?.type === 'character' && selectedClip.id === char.instanceId;
+              const charStart = char.startTime || 0;
+              const charDur = char.duration || totalDurationSeconds;
+              const isLocked = Boolean(char.isLocked);
 
-                return (
-                  <div key={char.instanceId} className="h-8 border-b border-[#1f222e] p-0.5 relative flex items-center">
+              return (
+                <div key={char.instanceId} className="h-8 border-b border-[#1f222e] flex relative items-center hover:bg-white/[0.02] transition-colors">
+                  {/* Left Track Header */}
+                  <div
+                    onClick={() => {
+                      setSelectedClip({ type: 'character', id: char.instanceId });
+                      onSelectCharacterInstance?.(char.instanceId);
+                    }}
+                    className={`w-48 shrink-0 h-full border-r border-[#262a38] bg-[#14161f] sticky left-0 z-20 px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors shadow-[2px_0_6px_rgba(0,0,0,0.4)] ${
+                      isSelected ? 'bg-blue-950/60 text-blue-200' : 'text-gray-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-1.5 truncate max-w-[105px]">
+                      <span className="text-gray-500 text-[10px] select-none">⋮⋮</span>
+                      <span className="truncate font-medium text-gray-200">{char.name}</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-gray-500 shrink-0" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => onToggleTrackVisibility?.('character', char.instanceId)}
+                        className="w-4 h-4 text-gray-500 hover:text-white flex items-center justify-center transition-colors"
+                        title={char.isVisible === false ? "Show on Stage" : "Hide from Stage"}
+                      >
+                        {char.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => onToggleTrackLock?.('character', char.instanceId)}
+                        className={`transition-all flex items-center justify-center shrink-0 ${
+                          char.isLocked
+                            ? 'w-4 h-4 rounded-full bg-blue-600 text-white shadow-sm hover:bg-blue-500'
+                            : 'w-4 h-4 text-gray-500 hover:text-white'
+                        }`}
+                        title={char.isLocked ? "Unlock Character" : "Lock Character"}
+                      >
+                        {char.isLocked ? <Lock className="w-2.5 h-2.5 fill-current" /> : <Unlock className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => {
+                          onDeleteCharacter?.(char.instanceId);
+                          if (selectedClip?.id === char.instanceId) setSelectedClip(null);
+                        }}
+                        className="w-4 h-4 text-gray-500 hover:text-red-400 flex items-center justify-center transition-colors"
+                        title="Delete Character"
+                      >
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Right Track Clip Lane */}
+                  <div
+                    style={{ width: `${totalTrackWidth}px` }}
+                    className="h-full relative shrink-0 p-0.5 flex items-center"
+                  >
                     <div
                       onClick={(e) => {
                         e.stopPropagation();
@@ -1308,8 +1304,8 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                         isLocked ? 'cursor-not-allowed opacity-85' : 'cursor-move'
                       } ${
                         isSelected
-                          ? 'ring-2 ring-white border-white bg-[#1d4ed8] z-20 shadow-lg'
-                          : 'bg-[#1d4ed8] border border-[#2563eb] text-blue-100 hover:brightness-110'
+                          ? 'ring-2 ring-white border-white bg-blue-600 z-20 shadow-lg'
+                          : 'bg-[#2563eb] border border-[#3b82f6] text-white hover:brightness-110'
                       }`}
                     >
                       {/* Left Handle Tab < */}
@@ -1339,7 +1335,7 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                         </span>
                         <span className="truncate font-semibold">{char.name}: {char.action || 'Idle'}</span>
                         <span className="text-[9px] text-blue-200 font-mono">({charDur.toFixed(1)}s)</span>
-                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0" />}
+                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0 ml-1" />}
                       </div>
 
                       {/* Right Handle Tab > */}
@@ -1364,18 +1360,70 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       )}
                     </div>
                   </div>
-                );
-              })}
+                </div>
+              );
+            })}
 
-              {/* 5. MEDIA / IMAGE TRACKS STRIPS (TEAL/EMERALD) */}
-              {mediaLayers.map((media) => {
-                const isSelected = selectedClip?.type === 'media' && selectedClip.id === media.instanceId;
-                const mediaStart = media.startTime || 0;
-                const mediaDur = media.duration || totalDurationSeconds;
-                const isLocked = Boolean(media.isLocked);
+            {/* 5. MEDIA / IMAGE TRACKS ROWS (SINGLE ROW: STICKY LEFT HEADER + RIGHT STRIP) */}
+            {mediaLayers.map((media) => {
+              const isSelected = selectedClip?.type === 'media' && selectedClip.id === media.instanceId;
+              const mediaStart = media.startTime || 0;
+              const mediaDur = media.duration || totalDurationSeconds;
+              const isLocked = Boolean(media.isLocked);
 
-                return (
-                  <div key={media.instanceId} className="h-8 border-b border-[#1f222e] p-0.5 relative flex items-center">
+              return (
+                <div key={media.instanceId} className="h-8 border-b border-[#1f222e] flex relative items-center hover:bg-white/[0.02] transition-colors">
+                  {/* Left Track Header */}
+                  <div
+                    onClick={() => {
+                      setSelectedClip({ type: 'media', id: media.instanceId });
+                      onSelectMediaLayer?.(media.instanceId);
+                    }}
+                    className={`w-48 shrink-0 h-full border-r border-[#262a38] bg-[#14161f] sticky left-0 z-20 px-2 flex items-center justify-between text-[11px] cursor-pointer transition-colors shadow-[2px_0_6px_rgba(0,0,0,0.4)] ${
+                      isSelected ? 'bg-teal-950/60 text-teal-200' : 'text-gray-400 hover:text-white'
+                    }`}
+                  >
+                    <div className="flex items-center space-x-1.5 truncate max-w-[105px]">
+                      <span className="text-gray-500 text-[10px] select-none">⋮⋮</span>
+                      <span className="truncate text-gray-200">{media.name}</span>
+                    </div>
+                    <div className="flex items-center space-x-1 text-gray-500 shrink-0" onClick={(e) => e.stopPropagation()}>
+                      <button
+                        onClick={() => onToggleTrackVisibility?.('media', media.instanceId)}
+                        className="w-4 h-4 text-gray-500 hover:text-white flex items-center justify-center transition-colors"
+                        title={media.isVisible === false ? "Show on Stage" : "Hide from Stage"}
+                      >
+                        {media.isVisible === false ? <EyeOff className="w-2.5 h-2.5 text-gray-600" /> : <Eye className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => onToggleTrackLock?.('media', media.instanceId)}
+                        className={`transition-all flex items-center justify-center shrink-0 ${
+                          media.isLocked
+                            ? 'w-4 h-4 rounded-full bg-blue-600 text-white shadow-sm hover:bg-blue-500'
+                            : 'w-4 h-4 text-gray-500 hover:text-white'
+                        }`}
+                        title={media.isLocked ? "Unlock Media Layer" : "Lock Media Layer"}
+                      >
+                        {media.isLocked ? <Lock className="w-2.5 h-2.5 fill-current" /> : <Unlock className="w-2.5 h-2.5" />}
+                      </button>
+                      <button
+                        onClick={() => {
+                          onDeleteMediaLayer?.(media.instanceId);
+                          if (selectedClip?.id === media.instanceId) setSelectedClip(null);
+                        }}
+                        className="w-4 h-4 text-gray-500 hover:text-red-400 flex items-center justify-center transition-colors"
+                        title="Delete Media"
+                      >
+                        <X className="w-2.5 h-2.5" />
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Right Track Clip Lane */}
+                  <div
+                    style={{ width: `${totalTrackWidth}px` }}
+                    className="h-full relative shrink-0 p-0.5 flex items-center"
+                  >
                     <div
                       onClick={(e) => {
                         e.stopPropagation();
@@ -1427,7 +1475,7 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                         <ImageIcon className="w-3 h-3 text-teal-300 shrink-0" />
                         <span className="truncate font-medium">{media.name}</span>
                         <span className="text-[9px] text-teal-300 font-mono">({mediaDur.toFixed(1)}s)</span>
-                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0" />}
+                        {isLocked && <Lock className="w-2.5 h-2.5 text-amber-300 shrink-0 ml-1" />}
                       </div>
 
                       {/* Right Handle Tab > */}
@@ -1452,9 +1500,9 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
                       )}
                     </div>
                   </div>
-                );
-              })}
-            </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

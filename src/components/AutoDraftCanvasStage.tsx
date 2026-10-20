@@ -525,6 +525,7 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
                 setInitialCharPos({ x: media.x, y: media.y });
               }}
               onClick={(e) => {
+                if (media.isLocked) return;
                 e.stopPropagation();
                 onSelectMediaInstance?.(media.instanceId);
               }}
@@ -536,10 +537,12 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
                 opacity: media.opacity ?? 1,
                 zIndex: media.zIndex || 5
               }}
-              className={`absolute cursor-move select-none ${
+              className={`absolute select-none ${
+                media.isLocked ? 'pointer-events-none' : 'cursor-move'
+              } ${
                 isTemplate ? 'p-0' : 'p-1'
               } group ${
-                isSelected ? 'ring-2 ring-indigo-500 rounded shadow-lg' : ''
+                isSelected && !media.isLocked ? 'ring-2 ring-indigo-500 rounded shadow-lg' : ''
               }`}
             >
               {media.type === 'video' ? (
@@ -730,8 +733,12 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
             <div
               key={char.instanceId}
               data-character-instance-id={char.instanceId}
-              onMouseDown={(e) => handleCharMouseDown(e, char)}
+              onMouseDown={(e) => {
+                if (char.isLocked) return;
+                handleCharMouseDown(e, char);
+              }}
               onClick={(e) => {
+                if (char.isLocked) return;
                 e.stopPropagation();
                 onSelectCharacterInstance(char.instanceId);
                 onSelectMediaInstance?.(null);
@@ -743,8 +750,10 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
                 transformOrigin: 'center center',
                 zIndex: char.zIndex || 20
               }}
-              className={`absolute cursor-move select-none p-1 transition-transform duration-75 flex items-center justify-center group ${
-                isSelected ? 'border border-[#93c5fd] shadow-sm' : ''
+              className={`absolute select-none p-1 transition-transform duration-75 flex items-center justify-center group ${
+                char.isLocked ? 'pointer-events-none' : 'cursor-move'
+              } ${
+                isSelected && !char.isLocked ? 'border border-[#93c5fd] shadow-sm' : ''
               }`}
             >
               {/* Character Wrapper with Flip, Filters, and Mask */}
@@ -866,7 +875,7 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
               {/* ===================================================== */}
               {/* INTERACTIVE 8-POINT BOUNDING BOX RESIZER & ROTATION   */}
               {/* ===================================================== */}
-              {isSelected && (
+              {isSelected && !char.isLocked && (
                 <>
                   {/* Top Stem Line */}
                   <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-[1.5px] h-7 bg-[#7ea5f8] pointer-events-none" />

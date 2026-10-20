@@ -129,7 +129,7 @@ export const AutoDraftStudio: React.FC = () => {
         (t) => t.id === tplParam || t.name.toLowerCase().includes(tplParam.toLowerCase())
       );
       if (found && found.sampleCharacters && found.sampleCharacters.length > 0) {
-        return found.sampleCharacters;
+        return found.sampleCharacters.map((c) => ({ ...c, isLocked: true }));
       }
     }
     return [];
@@ -676,6 +676,9 @@ export const AutoDraftStudio: React.FC = () => {
         });
       });
     }
+    if (currentTemplate && canvasMediaLayers.length === 0) {
+      handleApplyTemplate(currentTemplate);
+    }
   }, []);
 
   useEffect(() => {
@@ -833,7 +836,7 @@ export const AutoDraftStudio: React.FC = () => {
         startTime: 0,
         duration: totalDurationSeconds || 15,
         isVisible: true,
-        isLocked: false,
+        isLocked: true,
         isTemplateLayer: true
       }));
       setCanvasMediaLayers((prev) => [...prev.filter((m) => !m.isTemplateLayer), ...templateMediaLayers]);
@@ -870,7 +873,7 @@ export const AutoDraftStudio: React.FC = () => {
                 startTime: 0,
                 duration: totalDurationSeconds || 15,
                 isVisible: true,
-                isLocked: false,
+                isLocked: true,
                 isTemplateLayer: true
               };
             });
@@ -884,8 +887,12 @@ export const AutoDraftStudio: React.FC = () => {
 
     // 2. If template has official sample characters, auto apply all of them on the canvas!
     if (template.sampleCharacters && template.sampleCharacters.length > 0) {
-      setCharactersOnStage(template.sampleCharacters);
-      const firstChar = template.sampleCharacters[0];
+      const lockedSampleCharacters = template.sampleCharacters.map((c) => ({
+        ...c,
+        isLocked: true
+      }));
+      setCharactersOnStage(lockedSampleCharacters);
+      const firstChar = lockedSampleCharacters[0];
       setSelectedCharInstanceId(firstChar.instanceId);
       const found = AUTODRAFT_CHARACTERS.find((c) => c.id === firstChar.characterId);
       if (found) {
@@ -917,7 +924,8 @@ export const AutoDraftStudio: React.FC = () => {
               angle: charLayer.characterConfig.angle,
               action: charLayer.characterConfig.action,
               speed: 1.0,
-              isPlaying: true
+              isPlaying: true,
+              isLocked: true
             }
           ]);
           setSelectedCharInstanceId('char_inst_1');
