@@ -459,7 +459,29 @@ const SpineCanvasRigComponent: React.FC<SpineCanvasRigProps> = ({
       isRunning = false;
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [model, effectiveAnimName, isPlaying, speed, scale, flipH, pixelWidth, pixelHeight, dpr, onKinematicsUpdate, currentTimeSeconds]);
+  }, [model, effectiveAnimName, isPlaying, speed, scale, flipH, pixelWidth, pixelHeight, dpr, onKinematicsUpdate]);
+
+  // When paused, update canvas pose immediately when user scrubs or seeks
+  useEffect(() => {
+    if (!isPlaying && model && canvasRef.current) {
+      const ctx = canvasRef.current.getContext('2d');
+      if (!ctx) return;
+      const scrubTime = (currentTimeSeconds || 0) * speed;
+      ctx.save();
+      ctx.imageSmoothingEnabled = true;
+      ctx.imageSmoothingQuality = 'high';
+      model.renderToCanvas(
+        ctx,
+        effectiveAnimName,
+        scrubTime,
+        canvasRef.current.width,
+        canvasRef.current.height,
+        0.28 * scale * dpr,
+        flipH
+      );
+      ctx.restore();
+    }
+  }, [isPlaying, currentTimeSeconds, model, effectiveAnimName, speed, scale, flipH, dpr]);
 
   if (loadFailed || !model) {
     // Graceful fallback to image preview while loading or if no rig

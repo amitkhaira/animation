@@ -214,6 +214,7 @@ export const AutoDraftStudio: React.FC = () => {
   // 5. Playback Loop (Defaults to True so animations play immediately on load)
   const [isPlaying, setIsPlaying] = useState<boolean>(true);
   const [currentTimeSeconds, setCurrentTimeSeconds] = useState<number>(0);
+  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
   const [totalDurationSeconds, setTotalDurationSeconds] = useState<number>(() => {
     const maxAudio = audioTracks.reduce((acc, t) => Math.max(acc, (t.startTime || 0) + (t.duration || 15)), 15);
     return Math.max(15, Math.ceil(maxAudio));
@@ -431,7 +432,7 @@ export const AutoDraftStudio: React.FC = () => {
         audioEl.src = track.url;
       }
       audioEl.volume = track.isMuted ? 0 : (track.volume ?? 1);
-      audioEl.playbackRate = track.speed || 1.0;
+      audioEl.playbackRate = (track.speed || 1.0) * playbackSpeed;
 
       const start = track.startTime || 0;
       const dur = track.duration || 15;
@@ -681,16 +682,35 @@ export const AutoDraftStudio: React.FC = () => {
     }
   }, []);
 
+  // Accurate real-time wall-clock playback loop (smooth 1:1 second progression)
   useEffect(() => {
     if (!isPlaying) return;
-    const timer = setInterval(() => {
-      setCurrentTimeSeconds((t) => {
-        if (t >= totalDurationSeconds) return 0;
-        return Math.round((t + 0.1) * 10) / 10;
-      });
-    }, 100);
-    return () => clearInterval(timer);
-  }, [isPlaying, totalDurationSeconds]);
+
+    let lastTime = performance.now();
+    let animId: number;
+
+    const tick = (now: number) => {
+      const elapsedMs = now - lastTime;
+      // Update at smooth ~30fps (every 33ms) so React re-renders stay lightweight,
+      // while using EXACT elapsed wall-clock milliseconds so 1 real second = 1.000s in timeline!
+      if (elapsedMs >= 33) {
+        const deltaSec = (elapsedMs / 1000) * playbackSpeed;
+        lastTime = now;
+
+        setCurrentTimeSeconds((prev) => {
+          const next = prev + deltaSec;
+          if (next >= totalDurationSeconds) {
+            return 0; // loop back to 0
+          }
+          return next;
+        });
+      }
+      animId = requestAnimationFrame(tick);
+    };
+
+    animId = requestAnimationFrame(tick);
+    return () => cancelAnimationFrame(animId);
+  }, [isPlaying, playbackSpeed, totalDurationSeconds]);
 
   // Handlers
   const handleSelectCharacter = (char: CharacterItem) => {
@@ -1512,6 +1532,8 @@ export const AutoDraftStudio: React.FC = () => {
         isPlaying={isPlaying}
         currentTimeSeconds={currentTimeSeconds}
         totalDurationSeconds={totalDurationSeconds}
+        playbackSpeed={playbackSpeed}
+        onUpdatePlaybackSpeed={setPlaybackSpeed}
         onUpdateTotalDuration={(newDur) => setTotalDurationSeconds(Math.max(5, Math.min(3600, newDur)))}
         onTogglePlay={handleTogglePlay}
         onReset={handleResetPlayback}

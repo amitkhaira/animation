@@ -68,6 +68,8 @@ export interface AutoDraftTimelineProps {
   isPlaying: boolean;
   currentTimeSeconds: number;
   totalDurationSeconds: number;
+  playbackSpeed?: number;
+  onUpdatePlaybackSpeed?: (speed: number) => void;
   onUpdateTotalDuration?: (newDuration: number) => void;
   onTogglePlay: () => void;
   onReset: () => void;
@@ -126,6 +128,8 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
   isPlaying,
   currentTimeSeconds,
   totalDurationSeconds = 15,
+  playbackSpeed: propPlaybackSpeed,
+  onUpdatePlaybackSpeed,
   onUpdateTotalDuration,
   onTogglePlay,
   onReset,
@@ -164,7 +168,8 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
     }
   }, [selectedAudioTrackId]);
 
-  const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
+  const [internalPlaybackSpeed, setInternalPlaybackSpeed] = useState<number>(1.0);
+  const playbackSpeed = propPlaybackSpeed !== undefined ? propPlaybackSpeed : internalPlaybackSpeed;
   const [isMultiSelect, setIsMultiSelect] = useState<boolean>(false);
 
   // Zoom level state (0.5x to 3.0x)
@@ -349,7 +354,12 @@ export const AutoDraftTimeline: React.FC<AutoDraftTimelineProps> = ({
   const handleCycleSpeed = () => {
     const speeds = [0.5, 1.0, 1.25, 1.5, 2.0];
     const nextIdx = (speeds.indexOf(playbackSpeed) + 1) % speeds.length;
-    setPlaybackSpeed(speeds[nextIdx]);
+    const nextSpeed = speeds[nextIdx];
+    if (onUpdatePlaybackSpeed) {
+      onUpdatePlaybackSpeed(nextSpeed);
+    } else {
+      setInternalPlaybackSpeed(nextSpeed);
+    }
   };
 
   // Ruler Mouse Down & Scrubbing
