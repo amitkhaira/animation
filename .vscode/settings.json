@@ -1,0 +1,19 @@
+{
+  "git.autorefresh": true,
+  "git.statusLimit": 5000,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/public/characters/**": true,
+    "**/public/assets/**": true,
+    "**/public/animations/**": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/public/characters": true,
+    "**/public/assets": true
+  }
+}
