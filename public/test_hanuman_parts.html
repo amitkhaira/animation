@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html><body>
+<canvas id='c' width='800' height='600'></canvas>
+<script>
+const img = new Image();
+img.src = '/characters/rigs/hanuman/atlas.webp';
+img.onload = () => {
+  const ctx = document.getElementById('c').getContext('2d');
+  // HEAD: xy: 2, 2, size: 554, 693
+  ctx.drawImage(img, 2, 2, 554, 693, 0, 0, 277, 346);
+  // Hair: xy: 1864, 848, size: 400, 400
+  ctx.drawImage(img, 1864, 848, 400, 400, 300, 0, 200, 200);
+};
+</script></body></html>

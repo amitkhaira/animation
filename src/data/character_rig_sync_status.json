@@ -1,0 +1,136 @@
+{
+  "lastUpdated": "2026-09-20T09:54:42.449Z",
+  "overview": {
+    "totalCharactersTracked": 1057,
+    "totalOfficialAnimationsTracked": 2118,
+    "fullySyncedCharacters": [
+      "Pandit 2 New",
+      "Lion",
+      "Bear"
+    ],
+    "successRatePercentage": "100% for cached high-priority rigs"
+  },
+  "verifiedRigs": [
+    {
+      "characterId": "811550",
+      "characterName": "Pandit 2 New",
+      "pose": "3/4 FRONT",
+      "structureId": 530100,
+      "status": "SUCCESS",
+      "boneCount": 47,
+      "slotCount": 28,
+      "localFiles": [
+        "public/characters/rigs/pandit_2_fix/skeleton.json",
+        "public/characters/rigs/pandit_2_fix/skeleton.atlas",
+        "public/characters/rigs/pandit_2_fix/atlas.webp",
+        "public/characters/rigs/pandit_2_fix/Sitting_On_Knees.json"
+      ],
+      "animationStatus": {
+        "Sitting_On_Knees": "VERIFIED - True 2D Spine Kinematics with folded knees & bare chest matching AutoDraft media_1789896365667.png"
+      }
+    },
+    {
+      "characterId": "811550",
+      "characterName": "Pandit 2 New",
+      "pose": "FRONT",
+      "structureId": 530097,
+      "status": "SUCCESS",
+      "boneCount": 43,
+      "slotCount": 28,
+      "localFiles": [
+        "public/characters/rigs/pandit_2_fix/skeleton_front.json",
+        "public/characters/rigs/pandit_2_fix/skeleton_front.atlas",
+        "public/characters/rigs/pandit_2_fix/atlas_front.webp"
+      ],
+      "animationStatus": {
+        "Idle": "VERIFIED",
+        "Namaskar": "VERIFIED",
+        "Walk": "VERIFIED"
+      }
+    },
+    {
+      "characterId": "811550",
+      "characterName": "Pandit 2 New",
+      "pose": "3/4 BACK",
+      "structureId": 530098,
+      "status": "SUCCESS",
+      "boneCount": 43,
+      "slotCount": 27,
+      "localFiles": [
+        "public/characters/rigs/pandit_2_fix/skeleton_back.json",
+        "public/characters/rigs/pandit_2_fix/skeleton_back.atlas",
+        "public/characters/rigs/pandit_2_fix/atlas_back.webp"
+      ],
+      "animationStatus": {
+        "Bye_Bye": "VERIFIED",
+        "Look_Behind": "VERIFIED",
+        "Walk": "VERIFIED"
+      }
+    },
+    {
+      "characterId": "lion",
+      "characterName": "Lion",
+      "pose": "3/4 FRONT",
+      "structureId": 530054,
+      "status": "SUCCESS",
+      "boneCount": 70,
+      "slotCount": 22,
+      "localFiles": [
+        "public/characters/rigs/lion/skeleton.json",
+        "public/characters/rigs/lion/skeleton.atlas",
+        "public/characters/rigs/lion/atlas.webp"
+      ],
+      "animationStatus": {
+        "Attack": "VERIFIED",
+        "Roar": "VERIFIED",
+        "Run": "VERIFIED",
+        "Walk": "VERIFIED"
+      }
+    },
+    {
+      "characterId": "lion",
+      "characterName": "Lion",
+      "pose": "FRONT",
+      "structureId": 530062,
+      "status": "SUCCESS",
+      "boneCount": 70,
+      "slotCount": 22,
+      "localFiles": [
+        "public/characters/rigs/lion/skeleton_front.json",
+        "public/characters/rigs/lion/skeleton_front.atlas",
+        "public/characters/rigs/lion/atlas_front.webp"
+      ],
+      "animationStatus": {
+        "Roar": "VERIFIED",
+        "Lookarround": "VERIFIED",
+        "Walk_Fast": "VERIFIED"
+      }
+    },
+    {
+      "characterId": "bear",
+      "characterName": "Bear",
+      "pose": "3/4 FRONT",
+      "structureId": 530054,
+      "status": "SUCCESS",
+      "boneCount": 70,
+      "slotCount": 22,
+      "localFiles": [
+        "public/characters/rigs/bear/skeleton.json",
+        "public/characters/rigs/bear/skeleton.atlas",
+        "public/characters/rigs/bear/atlas.webp"
+      ],
+      "animationStatus": {
+        "Attack": "VERIFIED",
+        "Roar": "VERIFIED",
+        "Walk": "VERIFIED"
+      }
+    }
+  ],
+  "failuresAndPendingQueue": [
+    {
+      "type": "EXTENDED_ANIMAL_BACK",
+      "reason": "AutoDraft backend does not provide back pose structure for quadruped animals (lions/bears/horses)",
+      "resolution": "Gracefully fall back to 3/4 Front or mirrored front-side pose"
+    }
+  ]
+}

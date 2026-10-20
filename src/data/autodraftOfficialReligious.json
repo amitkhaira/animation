@@ -1,0 +1,3316 @@
+[
+  {
+    "id": 811550,
+    "user_id": 0,
+    "title": "Pandit 2 New",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /thumbnail/Pandit 2 Fix .webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix _Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix _Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix _Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/811550/structures/530080/head_thumbnail/1778568174696_download_(17)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix _Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix _Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix _Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix .webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix .json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/24_4_2026/Pandit 2 Fix /Pandit 2 Fix .atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/811550/structures/530093/head_thumbnail/1778568217865_Pandit_2_Fix__cropped.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 797153,
+    "user_id": 0,
+    "title": "Sadhu 3 ",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /thumbnail/Sadhu 3 fix .webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix _Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix _Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix _Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/797153/structures/530080/head_thumbnail/1778567623007_download_(13)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix _Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix _Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix _Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix .webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix .json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_4_2026/Sadhu 3 fix /Sadhu 3 fix .atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/797153/structures/530093/head_thumbnail/1778567530690_download_(12)_cropped.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 789705,
+    "user_id": 0,
+    "title": "Maa Lakshmi ",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/789705/thumbnail/1774855705680_Maa_Laxmi thumbnail;.webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character _Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character _Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character _Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/789705/structures/530080/head_thumbnail/1778567194394_download_(9)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character _Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character _Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character _Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character .webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character .json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_3_2026/test god character /test god character .atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/789705/structures/530093/head_thumbnail/1778567189493_download_(8)_cropped.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 690184,
+    "user_id": 0,
+    "title": "Noah",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/9_10_2025/Noah/thumbnail/Noah.webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Noah/Noah_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Noah/Noah_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Noah/Noah_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/690184/structures/530080/head_thumbnail/1778564089368_download_-_2026-05-11T125053.887_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Noah/Noah_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Noah/Noah_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Noah/Noah_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Noah/Noah_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Noah/Noah_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Noah/Noah.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Noah/Noah.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Noah/Noah.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Noah.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 690178,
+    "user_id": 0,
+    "title": "Apsara_2",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/3_8_2025/Apsara_2/thumbnail/Apsara_2.webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Apsara_2/Apsara_2_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Apsara_2/Apsara_2_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Apsara_2/Apsara_2_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/690178/structures/530080/head_thumbnail/1778505310123_download_-_2026-05-11T184437.308_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Apsara_2/Apsara_2_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Apsara_2/Apsara_2_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/Apsara_2/Apsara_2_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_8_2025/Apsara_2/Apsara_2_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_8_2025/Apsara_2/Apsara_2_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/3_8_2025/Apsara_2/Apsara_2.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/3_8_2025/Apsara_2/Apsara_2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/3_8_2025/Apsara_2/Apsara_2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Apsara_2.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 690169,
+    "user_id": 0,
+    "title": "King Rama",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/2_7_2025/King_Rama/thumbnail/King_Rama.webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/King Rama/King Rama_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/King Rama/King Rama_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/King Rama/King Rama_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/690169/structures/530080/head_thumbnail/1778505070104_download_-_2026-05-11T135707.491_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/King Rama/King Rama_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/King Rama/King Rama_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_12_2025/King Rama/King Rama_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/King_Rama/King_Rama.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/King_Rama/King_Rama_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/King_Rama/King_Rama.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/King_Rama/King_Rama.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/King_Rama/King_Rama.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/King Rama.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 679540,
+    "user_id": 0,
+    "title": "Kabir",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/19_11_2025/Western_Old_Man9/thumbnail/Western_Old_Man9.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/19_11_2025/Western_Old_Man9/Western_Old_Man9_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/19_11_2025/Western_Old_Man9/Western_Old_Man9_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/19_11_2025/Western_Old_Man9/Western_Old_Man9.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/19_11_2025/Western_Old_Man9/Western_Old_Man9.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/19_11_2025/Western_Old_Man9/Western_Old_Man9.atlas",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 651708,
+    "user_id": 0,
+    "title": "Apsara_1",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/28_7_2025/Apsara_1/thumbnail/Apsara_1.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_10_2025/Apsara_1/Apsara_1_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_10_2025/Apsara_1/Apsara_1_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_10_2025/Apsara_1/Apsara_1_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/651708/structures/530080/head_thumbnail/1778503872758_download_-_2026-05-11T140637.559_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_10_2025/Apsara_1/Apsara_1_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_10_2025/Apsara_1/Apsara_1_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_10_2025/Apsara_1/Apsara_1_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/28_7_2025/Apsara_1/Apsara_1_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/28_7_2025/Apsara_1/Apsara_1_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/28_7_2025/Apsara_1/Apsara_1.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/28_7_2025/Apsara_1/Apsara_1.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/28_7_2025/Apsara_1/Apsara_1.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Apsara_1.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 650781,
+    "user_id": 0,
+    "title": "Muslim_Woman_1",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/14_8_2025/Muslim_Woman/thumbnail/Muslim_Woman.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Muslim_Woman_1/Muslim_Woman_1_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Muslim_Woman_1/Muslim_Woman_1_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Muslim_Woman_1/Muslim_Woman_1_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/650781/structures/530080/head_thumbnail/1778503713974_download_-_2026-05-11T140732.603_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Muslim_Woman_1/Muslim_Woman_1_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Muslim_Woman_1/Muslim_Woman_1_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Muslim_Woman_1/Muslim_Woman_1_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_8_2025/Muslim_Woman/Muslim_Woman_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_8_2025/Muslim_Woman/Muslim_Woman_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/14_8_2025/Muslim_Woman/Muslim_Woman.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/14_8_2025/Muslim_Woman/Muslim_Woman.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/14_8_2025/Muslim_Woman/Muslim_Woman.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Muslim_Woman_1.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 650780,
+    "user_id": 0,
+    "title": "Tantrik_1",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/7_8_2025/Tantrik_1/thumbnail/Tantrik_1.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Tantrik_1/Tantrik_1_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Tantrik_1/Tantrik_1_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Tantrik_1/Tantrik_1_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/650780/structures/530080/head_thumbnail/1778503689954_download_(64)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Tantrik_1/Tantrik_1_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Tantrik_1/Tantrik_1_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/13_10_2025/Tantrik_1/Tantrik_1_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_8_2025/Tantrik_1/Tantrik_1_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_8_2025/Tantrik_1/Tantrik_1_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_8_2025/Tantrik_1/Tantrik_1.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_8_2025/Tantrik_1/Tantrik_1.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_8_2025/Tantrik_1/Tantrik_1.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Tantrik_1.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 648011,
+    "user_id": 0,
+    "title": "Guliga",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/10_10_2025/Guliga/thumbnail/Guliga.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Guliga/Guliga_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Guliga/Guliga_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Guliga/Guliga.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Guliga/Guliga.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Guliga/Guliga.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Guliga.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 648008,
+    "user_id": 0,
+    "title": "Panjurli ",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/10_10_2025/Panjurli /thumbnail/Panjurli .webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Panjurli /Panjurli _ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Panjurli /Panjurli _ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Panjurli /Panjurli .webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Panjurli /Panjurli .json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Panjurli /Panjurli .atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Panjurli .webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 647978,
+    "user_id": 0,
+    "title": "Christian_Boy_2",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/10_10_2025/Christian_Boy_2/thumbnail/Christian_Boy_2.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Boy_2/Christian_Boy_2_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Boy_2/Christian_Boy_2_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Boy_2/Christian_Boy_2.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Boy_2/Christian_Boy_2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Boy_2/Christian_Boy_2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Christian_Boy_2.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 647973,
+    "user_id": 0,
+    "title": "Christian_Girl_1",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/10_10_2025/Christian_Girl_1/thumbnail/Christian_Girl_1.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Girl_1/Christian_Girl_1_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Christian_Girl_1/Christian_Girl_1_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/10_10_2025/Christian_Girl_1/Christian_Girl_1.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/10_10_2025/Christian_Girl_1/Christian_Girl_1.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/10_10_2025/Christian_Girl_1/Christian_Girl_1.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Christian_Girl_1.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 647972,
+    "user_id": 0,
+    "title": "Virgin_Mary",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/10_10_2025/Virgin_Mary/thumbnail/Virgin_Mary.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Virgin_Mary/Virgin_Mary_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/10_10_2025/Virgin_Mary/Virgin_Mary_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/10_10_2025/Virgin_Mary/Virgin_Mary.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/10_10_2025/Virgin_Mary/Virgin_Mary.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/10_10_2025/Virgin_Mary/Virgin_Mary.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Virgin_Mary.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 647106,
+    "user_id": 0,
+    "title": "Christian_Boy_1",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/9_10_2025/Christian_Boy_1/thumbnail/Christian_Boy_1.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Christian_Boy_1/Christian_Boy_1_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Christian_Boy_1/Christian_Boy_1_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Christian_Boy_1/Christian_Boy_1.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Christian_Boy_1/Christian_Boy_1.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Christian_Boy_1/Christian_Boy_1.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Christian_Boy_1.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 647094,
+    "user_id": 0,
+    "title": "Pope",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/9_10_2025/Pope/thumbnail/Pope.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Pope/Pope_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Pope/Pope_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Pope/Pope.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Pope/Pope.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Pope/Pope.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Pope.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 647086,
+    "user_id": 0,
+    "title": "Buddhist_Monk",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/9_10_2025/Buddhist_Monk/thumbnail/Buddhist_Monk.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Buddhist_Monk/Buddhist_Monk_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/9_10_2025/Buddhist_Monk/Buddhist_Monk_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Buddhist_Monk/Buddhist_Monk.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Buddhist_Monk/Buddhist_Monk.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/9_10_2025/Buddhist_Monk/Buddhist_Monk.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Buddhist_Monk.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 645136,
+    "user_id": 0,
+    "title": "Muslim_Girl_1",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/14_8_2025/Muslim_Girl_1/thumbnail/Muslim_Girl_1.webp",
+    "source": "DEFAULT",
+    "version": 102,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_10_2025/Muslim_Girl_1/Muslim_Girl_1_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_10_2025/Muslim_Girl_1/Muslim_Girl_1_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_10_2025/Muslim_Girl_1/Muslim_Girl_1_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/645136/structures/530080/head_thumbnail/1778568943896_download_(20)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_10_2025/Muslim_Girl_1/Muslim_Girl_1_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_10_2025/Muslim_Girl_1/Muslim_Girl_1_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_10_2025/Muslim_Girl_1/Muslim_Girl_1_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_8_2025/Muslim_Girl_1/Muslim_Girl_1_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/14_8_2025/Muslim_Girl_1/Muslim_Girl_1_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/14_8_2025/Muslim_Girl_1/Muslim_Girl_1.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/14_8_2025/Muslim_Girl_1/Muslim_Girl_1.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/14_8_2025/Muslim_Girl_1/Muslim_Girl_1.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Muslim_Girl_1.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 643691,
+    "user_id": 0,
+    "title": "Nun",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/5_10_2025/Nun/thumbnail/Nun.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Nun/Nun_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Nun/Nun_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Nun/Nun.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Nun/Nun.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Nun/Nun.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Nun.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 643689,
+    "user_id": 0,
+    "title": "Pastor",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/5_10_2025/Pastor/thumbnail/Pastor.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Pastor/Pastor_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Pastor/Pastor_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Pastor/Pastor.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Pastor/Pastor.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Pastor/Pastor.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Pastor.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 643684,
+    "user_id": 0,
+    "title": "Jesus_Christ",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/5_10_2025/Jesus_Christ/thumbnail/Jesus_Christ.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Jesus_Christ/Jesus_Christ_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Jesus_Christ/Jesus_Christ_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Jesus_Christ/Jesus_Christ.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Jesus_Christ/Jesus_Christ.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Jesus_Christ/Jesus_Christ.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Jesus_Christ.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 643683,
+    "user_id": 0,
+    "title": "Buddha",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/5_10_2025/Buddha/thumbnail/Buddha.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Buddha/Buddha_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/5_10_2025/Buddha/Buddha_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Buddha/Buddha.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Buddha/Buddha.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/5_10_2025/Buddha/Buddha.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Buddha.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 633291,
+    "user_id": 0,
+    "title": "Mahishasur",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/23_9_2025/Mahishasur/thumbnail/Mahishasur.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/23_9_2025/Mahishasur/Mahishasur_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/23_9_2025/Mahishasur/Mahishasur_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/23_9_2025/Mahishasur/Mahishasur.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/23_9_2025/Mahishasur/Mahishasur.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/23_9_2025/Mahishasur/Mahishasur.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Mahishasur.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 632090,
+    "user_id": 0,
+    "title": "Kumbhakarna",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/21_9_2025/Kumbhakarna/thumbnail/Kumbhakarna.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Kumbhakarna/Kumbhakarna_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Kumbhakarna/Kumbhakarna_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Kumbhakarna/Kumbhakarna.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Kumbhakarna/Kumbhakarna.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Kumbhakarna/Kumbhakarna.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Kumbhakarna.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 632087,
+    "user_id": 0,
+    "title": "Ravana",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/21_9_2025/Ravana/thumbnail/Ravana.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Ravana/Ravana_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Ravana/Ravana_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Ravana/Ravana.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Ravana/Ravana.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Ravana/Ravana.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Ravana.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 632086,
+    "user_id": 0,
+    "title": "Lakshman",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/21_9_2025/Lakshman/thumbnail/Lakshman.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Lakshman/Lakshman_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Lakshman/Lakshman_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Lakshman/Lakshman.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Lakshman/Lakshman.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Lakshman/Lakshman.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Lakshman.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 632084,
+    "user_id": 0,
+    "title": "Maa_Sita",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/632084/thumbnail/1758473019748_Maa_Sita.png",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Maa_Sita/Maa_Sita_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Maa_Sita/Maa_Sita_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/21_9_2025/Maa_Sita/Maa_Sita.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/21_9_2025/Maa_Sita/Maa_Sita.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/21_9_2025/Maa_Sita/Maa_Sita.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Maa_Sita.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 632077,
+    "user_id": 0,
+    "title": "Maa_Saraswati",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/21_9_2025/Maa_Saraswati/thumbnail/Maa_Saraswati.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Maa_Saraswati/Maa_Saraswati_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/21_9_2025/Maa_Saraswati/Maa_Saraswati_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/21_9_2025/Maa_Saraswati/Maa_Saraswati.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/21_9_2025/Maa_Saraswati/Maa_Saraswati.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/21_9_2025/Maa_Saraswati/Maa_Saraswati.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Maa_Saraswati.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 627789,
+    "user_id": 0,
+    "title": "Brahma_ji",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/627789/thumbnail/1758076559439_Brhma_Ji.png",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/17_9_2025/Brahma_ji/Brahma_ji_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/17_9_2025/Brahma_ji/Brahma_ji_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/17_9_2025/Brahma_ji/Brahma_ji.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/17_9_2025/Brahma_ji/Brahma_ji.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/17_9_2025/Brahma_ji/Brahma_ji.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Brahma_ji.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 627463,
+    "user_id": 0,
+    "title": "Muslim_Man_1",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/thumbnail/Muslim_Man_1.webp",
+    "source": "DEFAULT",
+    "version": 108,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/627463/structures/530080/head_thumbnail/1778502521469_download_(54)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_Back.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_Back.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_Back.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/16_9_2025/Muslim_Man_1/Muslim_Man_1.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Muslim_Man_1.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 619961,
+    "user_id": 0,
+    "title": "Maa_Durga",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/8_9_2025/Maa_Durga/thumbnail/Maa_Durga.webp",
+    "source": "DEFAULT",
+    "version": 107,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/8_9_2025/Maa_Durga/Maa_Durga_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/8_9_2025/Maa_Durga/Maa_Durga_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/8_9_2025/Maa_Durga/Maa_Durga.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/8_9_2025/Maa_Durga/Maa_Durga.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/8_9_2025/Maa_Durga/Maa_Durga.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Maa_Durga.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 618483,
+    "user_id": 0,
+    "title": "Prince_Rama",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/thumbnail/Prince_Rama.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/Prince_Rama_Front.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/Prince_Rama_Front.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/Prince_Rama_Front.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/618483/structures/530080/head_thumbnail/1778502120404_download_-_2026-05-11T135707.491_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/Prince_Rama.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/Prince_Rama.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Prince_Rama/Prince_Rama.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Prince_Rama/Prince_Rama.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Prince_Rama/Prince_Rama_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Prince_Rama/Prince_Rama.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Prince_Rama/Prince_Rama.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Prince_Rama/Prince_Rama.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Prince_Rama.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 618044,
+    "user_id": 0,
+    "title": "Maa_Kaali",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/6_9_2025/Maa_Kaali/thumbnail/Maa_Kaali.webp",
+    "source": "DEFAULT",
+    "version": 107,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Maa_Kaali/Maa_Kaali_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/6_9_2025/Maa_Kaali/Maa_Kaali_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/6_9_2025/Maa_Kaali/Maa_Kaali.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/6_9_2025/Maa_Kaali/Maa_Kaali.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/6_9_2025/Maa_Kaali/Maa_Kaali.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Maa_Kaali.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 613037,
+    "user_id": 0,
+    "title": "God_Shiva",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_9_2025/God_Shiva/thumbnail/God_Shiva.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/God_Shiva/front/God_Shiva.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/God_Shiva/front/God_Shiva.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/God_Shiva/front/God_Shiva.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/613037/structures/530080/head_thumbnail/1778501801946_download_-_2026-05-11T145949.098_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/God_Shiva/back/God_Shiva.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/God_Shiva/back/God_Shiva.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/God_Shiva/back/God_Shiva.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/God_Shiva/God_Shiva.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/God_Shiva/God_Shiva_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/God_Shiva/God_Shiva.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/God_Shiva/God_Shiva.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/God_Shiva/God_Shiva.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/God_Shiva.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 608256,
+    "user_id": 0,
+    "title": "Queen Sita",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/28_8_2025/Queen_Sita/thumbnail/Queen_Sita.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Queen Sita/front/Queen Sita.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Queen Sita/front/Queen Sita.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Queen Sita/front/Queen Sita.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/608256/structures/530080/head_thumbnail/1778501696252_download_-_2026-05-11T151214.999_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Queen Sita/back/Queen Sita.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Queen Sita/back/Queen Sita.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Queen Sita/back/Queen Sita.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Queen_Sita/Queen_Sita.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Queen_Sita/Queen_Sita_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/2_7_2025/Queen_Sita/Queen_Sita.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/2_7_2025/Queen_Sita/Queen_Sita.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/2_7_2025/Queen_Sita/Queen_Sita.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/608256/structures/530092/head_thumbnail/1777446195238_Queen_Sita.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 598131,
+    "user_id": 0,
+    "title": "Ganesh",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/598131/thumbnail/1756117203725_Ganesh Ji.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Ganesh/front/Ganesh.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Ganesh/front/Ganesh.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Ganesh/front/Ganesh.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/598131/structures/530080/head_thumbnail/1778501621988_download_-_2026-05-11T151253.335_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Ganesh/back/Ganesh.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Ganesh/back/Ganesh.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Ganesh/back/Ganesh.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ganesh Ji/Ganesh Ji.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ganesh Ji/Ganesh Ji_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ganesh Ji/Ganesh Ji.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ganesh Ji/Ganesh Ji.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ganesh Ji/Ganesh Ji.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Ganesh.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 598128,
+    "user_id": 0,
+    "title": "Maa Parvati",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/598128/thumbnail/1756117168324_Maa_Parvati (1).webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Maa Parvati/front/Maa Parvati.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Maa Parvati/front/Maa Parvati.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Maa Parvati/front/Maa Parvati.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/598128/structures/530080/head_thumbnail/1778501605719_download_-_2026-05-11T151411.842_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Maa Parvati/back/Maa Parvati.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Maa Parvati/back/Maa Parvati.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Maa Parvati/back/Maa Parvati.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Maa_Parvati/Maa_Parvati.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Maa_Parvati/Maa_Parvati_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Maa_Parvati/Maa_Parvati.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Maa_Parvati/Maa_Parvati.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Maa_Parvati/Maa_Parvati.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Maa Parvati.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 598126,
+    "user_id": 0,
+    "title": "Radha",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/598126/thumbnail/1756117215691_Radha.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Radha/front/Radha.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Radha/front/Radha.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Radha/front/Radha.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/598126/structures/530080/head_thumbnail/1778501562399_download_-_2026-05-11T151426.023_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Radha/back/Radha.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Radha/back/Radha.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Radha/back/Radha.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Radha/Radha.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/30_6_2025/Radha/Radha_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/30_6_2025/Radha/Radha.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/30_6_2025/Radha/Radha.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/30_6_2025/Radha/Radha.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Radha.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 598123,
+    "user_id": 0,
+    "title": "Surya_Dev",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/598123/thumbnail/1756117180975_Surya_Dev.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Surya_Dev/front/Surya_Dev.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Surya_Dev/front/Surya_Dev.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Surya_Dev/front/Surya_Dev.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/598123/structures/530080/head_thumbnail/1778501536319_download_-_2026-05-11T151446.476_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Surya_Dev/back/Surya_Dev.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Surya_Dev/back/Surya_Dev.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Surya_Dev/back/Surya_Dev.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Surya_Dev/Surya_Dev.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Surya_Dev/Surya_Dev_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Surya_Dev/Surya_Dev.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Surya_Dev/Surya_Dev.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Surya_Dev/Surya_Dev.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Surya_Dev.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 598122,
+    "user_id": 0,
+    "title": "Hanuman",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/characters/598122/thumbnail/1756117193305_Hanuman.webp",
+    "source": "DEFAULT",
+    "version": 104,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Hanuman/front/Hanuman.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Hanuman/front/Hanuman.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Hanuman/front/Hanuman.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/598122/structures/530080/head_thumbnail/1778501507567_download_-_2026-05-11T152139.067_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Hanuman/back/Hanuman.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Hanuman/back/Hanuman.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Hanuman/back/Hanuman.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Hanuman/Hanuman.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Hanuman/Hanuman_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Hanuman/Hanuman.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Hanuman/Hanuman.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Hanuman/Hanuman.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Hanuman.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 573436,
+    "user_id": 0,
+    "title": "Muslim_Boy2",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/18_8_2025/Muslim_Boy2/thumbnail/Muslim_Boy2.webp",
+    "source": "DEFAULT",
+    "version": 107,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/18_8_2025/Muslim_Boy2/Muslim_Boy2_ik.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/18_8_2025/Muslim_Boy2/Muslim_Boy2_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/18_8_2025/Muslim_Boy2/Muslim_Boy2.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/18_8_2025/Muslim_Boy2/Muslim_Boy2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/18_8_2025/Muslim_Boy2/Muslim_Boy2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Muslim_Boy2.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 391212,
+    "user_id": 0,
+    "title": "Vishnu_Ji",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/7_7_2025/Vishnu_Ji/thumbnail/Vishnu_Ji.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_7_2025/Vishnu_Ji/Vishnu_Ji.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_7_2025/Vishnu_Ji/Vishnu_Ji_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_7_2025/Vishnu_Ji/Vishnu_Ji.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_7_2025/Vishnu_Ji/Vishnu_Ji.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/7_7_2025/Vishnu_Ji/Vishnu_Ji.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Vishnu_Ji.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 370920,
+    "user_id": 0,
+    "title": "Kids_Girl4",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/3_7_2025/Kids_Girl4/thumbnail/Kids_Girl4.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Kids_Girl4/front/Kids_Girl4.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Kids_Girl4/front/Kids_Girl4.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Kids_Girl4/front/Kids_Girl4.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/370920/structures/530080/head_thumbnail/1778501270556_download_(4)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Kids_Girl4/back/Kids_Girl4.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Kids_Girl4/back/Kids_Girl4.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Kids_Girl4/back/Kids_Girl4.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_7_2025/Kids_Girl4/Kids_Girl4.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/3_7_2025/Kids_Girl4/Kids_Girl4_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/3_7_2025/Kids_Girl4/Kids_Girl4.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/3_7_2025/Kids_Girl4/Kids_Girl4.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/3_7_2025/Kids_Girl4/Kids_Girl4.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Kids_Girl4.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 366288,
+    "user_id": 0,
+    "title": "Narad Muni",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/2_7_2025/Narad_Muni/thumbnail/Narad_Muni.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Narad_Muni/Narad_Muni.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Narad_Muni/Narad_Muni_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Narad_Muni/Narad_Muni.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Narad_Muni/Narad_Muni.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Narad_Muni/Narad_Muni.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Narad Muni.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 366195,
+    "user_id": 0,
+    "title": "Krishna",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/2_7_2025/Krishna/thumbnail/Krishna.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Krishna/Krishna.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Krishna/Krishna_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Krishna/Krishna.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Krishna/Krishna.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/2_7_2025/Krishna/Krishna.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Krishna.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 364916,
+    "user_id": 0,
+    "title": "Western_Girl2",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Western_Girl2/thumbnail/Western_Girl2.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Western_Girl2/front/Western_Girl2.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Western_Girl2/front/Western_Girl2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Western_Girl2/front/Western_Girl2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/364916/structures/530080/head_thumbnail/1778500946333_download_-_2026-05-11T152632.213_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Western_Girl2/back/Western_Girl2.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Western_Girl2/back/Western_Girl2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Western_Girl2/back/Western_Girl2.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Western_Girl2/Western_Girl2.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Western_Girl2/Western_Girl2_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Western_Girl2/Western_Girl2.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Western_Girl2/Western_Girl2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Western_Girl2/Western_Girl2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Western_Girl2.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 364795,
+    "user_id": 0,
+    "title": "Baba",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Baba/thumbnail/Baba.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Baba/front/Baba.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Baba/front/Baba.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Baba/front/Baba.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/364795/structures/530080/head_thumbnail/1778500104327_download_(40)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Baba/back/Baba.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Baba/back/Baba.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Baba/back/Baba.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Baba/Baba.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Baba/Baba_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Baba/Baba.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Baba/Baba.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Baba/Baba.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Baba.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 364759,
+    "user_id": 0,
+    "title": "Sadhu",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Sadhu/thumbnail/Sadhu.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu/front/Sadhu.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu/front/Sadhu.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu/front/Sadhu.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/364759/structures/530080/head_thumbnail/1778500061607_download_(39)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu/back/Sadhu.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu/back/Sadhu.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu/back/Sadhu.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu/Sadhu.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu/Sadhu_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu/Sadhu.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu/Sadhu.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu/Sadhu.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Sadhu.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 364755,
+    "user_id": 0,
+    "title": "Muslim_Boy",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Muslim_Boy/thumbnail/Muslim_Boy.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Muslim_Boy/front/Muslim_Boy.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Muslim_Boy/front/Muslim_Boy.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Muslim_Boy/front/Muslim_Boy.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/364755/structures/530080/head_thumbnail/1778499746441_download_-_2026-05-11T152655.961_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Muslim_Boy/back/Muslim_Boy.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Muslim_Boy/back/Muslim_Boy.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Muslim_Boy/back/Muslim_Boy.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Muslim_Boy/Muslim_Boy.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Muslim_Boy/Muslim_Boy_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Muslim_Boy/Muslim_Boy.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Muslim_Boy/Muslim_Boy.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Muslim_Boy/Muslim_Boy.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Muslim_Boy.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 364715,
+    "user_id": 0,
+    "title": "Sadhu_2",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Sadhu_2/thumbnail/Sadhu_2.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu_2/front/Sadhu_2.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu_2/front/Sadhu_2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu_2/front/Sadhu_2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/364715/structures/530080/head_thumbnail/1778498858869_download_(35)_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu_2/back/Sadhu_2.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu_2/back/Sadhu_2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sadhu_2/back/Sadhu_2.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu_2/Sadhu_2.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sadhu_2/Sadhu_2_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Sadhu_2/Sadhu_2.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Sadhu_2/Sadhu_2.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Sadhu_2/Sadhu_2.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Sadhu_2.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 364711,
+    "user_id": 0,
+    "title": "Sheikh",
+    "metadata": null,
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Sheikh/thumbnail/Sheikh.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530097,
+        "type": "human",
+        "pose": "front",
+        "reference_url": null,
+        "version": 111,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sheikh/front/Sheikh.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sheikh/front/Sheikh.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sheikh/front/Sheikh.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/characters/364711/structures/530080/head_thumbnail/1778498819756_download_-_2026-05-11T152811.625_cropped.webp",
+          "previous_structure_id": [
+            530080,
+            530096
+          ]
+        }
+      },
+      {
+        "id": 530098,
+        "type": "human",
+        "pose": "back",
+        "reference_url": null,
+        "version": 105,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sheikh/back/Sheikh.png",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sheikh/back/Sheikh.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/04-09-25/Sheikh/back/Sheikh.atlas",
+          "previous_structure_id": [
+            530061
+          ]
+        }
+      },
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sheikh/Sheikh.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Sheikh/Sheikh_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Sheikh/Sheikh.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Sheikh/Sheikh.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/25-03-26-fix/1_7_2025/Sheikh/Sheikh.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Sheikh.webp",
+          "previous_structure_id": [
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 360787,
+    "user_id": 0,
+    "title": "Ram",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Ram/thumbnail/Ram.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ram/Ram.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ram/Ram_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ram/Ram.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ram/Ram.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Ram/Ram.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Ram.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 360771,
+    "user_id": 0,
+    "title": "Kartikeya",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Kartikeya/thumbnail/Kartikeya.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Kartikeya/Kartikeya.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Kartikeya/Kartikeya_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Kartikeya/Kartikeya.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Kartikeya/Kartikeya.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Kartikeya/Kartikeya.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Kartikeya.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": 360766,
+    "user_id": 0,
+    "title": "Indra Dev",
+    "metadata": {
+      "premium": true
+    },
+    "thumbnail_url": "https://assets.autodraft.kr/canvas-animations/characters/gamma/1_7_2025/Indra_Dev/thumbnail/Indra_Dev.webp",
+    "source": "DEFAULT",
+    "version": 106,
+    "state": "ACTIVE",
+    "structures": [
+      {
+        "id": 530100,
+        "type": "human",
+        "pose": "front-side",
+        "reference_url": null,
+        "version": 133,
+        "state": "ACTIVE",
+        "metadata": {
+          "atlasIk": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Indra_Dev/Indra_Dev.atlas",
+          "ik_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Indra_Dev/Indra_Dev_new_ik.json",
+          "atlas_png": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Indra_Dev/Indra_Dev.webp",
+          "json_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Indra_Dev/Indra_Dev.json",
+          "atlas_file": "https://assets.autodraft.in/canvas-animations/characters/gamma/1_7_2025/Indra_Dev/Indra_Dev.atlas",
+          "head_thumbnail_url": "https://assets.autodraft.in/canvas-animations/characters/gamma/head_thumbnails/Indra Dev.webp",
+          "previous_structure_id": [
+            530071,
+            530072,
+            530073,
+            530074,
+            530074,
+            530078,
+            530081,
+            530082,
+            530083,
+            530085,
+            530086,
+            530087,
+            530088,
+            530089,
+            530090,
+            530091,
+            530092,
+            530093,
+            530094,
+            530095,
+            530099
+          ]
+        }
+      }
+    ]
+  }
+]

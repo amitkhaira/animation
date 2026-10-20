@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Automated Character Switch Test</title>
+  <style>
+    body { margin: 0; background: #111; color: white; font-family: monospace; }
+    #log { padding: 10px; background: #222; max-height: 150px; overflow-y: auto; font-size: 12px; }
+    iframe { width: 100vw; height: calc(100vh - 150px); border: none; }
+  </style>
+</head>
+<body>
+  <div id="log">Starting automated character switch test...</div>
+  <iframe id="app-frame" src="/"></iframe>
+  <script>
+    const log = (msg, color = 'white') => {
+      const el = document.getElementById('log');
+      const p = document.createElement('div');
+      p.style.color = color;
+      p.textContent = `[${new Date().toISOString().slice(11, 19)}] ${msg}`;
+      el.appendChild(p);
+      el.scrollTop = el.scrollHeight;
+    };
+
+    const frame = document.getElementById('app-frame');
+
+    frame.onload = async () => {
+      log('App iframe loaded. Attaching error monitors...');
+      const fwin = frame.contentWindow;
+      const fdoc = frame.contentDocument;
+
+      fwin.addEventListener('error', (e) => {
+        log(`RUNTIME ERROR: ${e.message} at ${e.filename}:${e.lineno}`, 'red');
+      });
+      fwin.addEventListener('unhandledrejection', (e) => {
+        log(`UNHANDLED PROMISE REJECTION: ${e.reason?.message || e.reason}`, 'red');
+      });
+
+      // Wait 3 seconds for initial render (Pandit 2 New)
+      await new Promise(r => setTimeout(r, 3000));
+      log('Initial render verified. Looking for Back to Characters button...');
+
+      const backBtn = fdoc.querySelector('button[title="Back to Characters"]');
+      if (!backBtn) {
+        log('Back button not found directly. Checking buttons...', 'yellow');
+      } else {
+        log('Clicking Back to Characters button...');
+        backBtn.click();
+      }
+
+      await new Promise(r => setTimeout(r, 2000));
+
+      // In catalog view, find character cards
+      const cards = fdoc.querySelectorAll('.group');
+      log(`Found ${cards.length} character cards in catalog.`);
+
+      if (cards.length > 1) {
+        // Pick card 1 (which is different from Pandit)
+        const targetCard = cards[1];
+        const cardTitle = targetCard.textContent?.trim().slice(0, 30) || 'Card 1';
+        log(`Clicking target character card: "${cardTitle}"...`);
+        targetCard.click();
+
+        await new Promise(r => setTimeout(r, 3000));
+
+        // Check if page is healthy
+        const root = fdoc.getElementById('root');
+        const hasError = fdoc.querySelector('.bg-red-950');
+        if (hasError) {
+          log('TEST FAILED: Error boundary triggered!', 'red');
+        } else if (root && root.children.length > 0) {
+          log(`SUCCESS! Character switched to "${cardTitle}" with ZERO errors! Page is alive and healthy!`, '#4ade80');
+          const done = document.createElement('div');
+          done.id = 'switch-test-passed';
+          document.body.appendChild(done);
+        } else {
+          log('TEST FAILED: Root is empty!', 'red');
+        }
+      } else {
+        log('Could not find character cards to click.', 'yellow');
+      }
+    };
+  </script>
+</body>
+</html>

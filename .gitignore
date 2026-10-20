@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+.npm-cache/
+
+# Production & Build outputs
+dist/
+build/
+*.log
+*.pid
+vite-server.pid
+
+# Network dumps & debug logs
+*.har
+autodraft.in.har
+
+# Temporary and test captures
+e2e_screenshots/
+scratch/
+atlas.png
+atlas_test.png
+studio_test.png
+
+# Media files & large assets (stored locally, not pushed to Git)
+public/characters/
+public/animations/
+public/assets/
+*.mp3
+*.webm
+*.mp4
+*.gif
+
+# System files
+.DS_Store
+*.DS_Store
+Thumbs.db

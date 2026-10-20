@@ -1,0 +1,1741 @@
+{
+  "bird": [
+    {
+      "id": "Front_Fly",
+      "label": "Front Fly Hover",
+      "category": "movement",
+      "thumbnailUrl": "/animations/bird_fly.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Fly.json"
+    },
+    {
+      "id": "Front_Perch",
+      "label": "Front Perch Idle",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Idle.json"
+    },
+    {
+      "id": "Front_Squawk",
+      "label": "Front Squawk Call",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/bird_angry.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Angry.json"
+    },
+    {
+      "id": "Front_Feed",
+      "label": "Front Feeding Chirp",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Talking.json"
+    },
+    {
+      "id": "Fly",
+      "label": "3/4 Soaring Fly",
+      "category": "movement",
+      "thumbnailUrl": "/animations/bird_fly.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Fly.json"
+    },
+    {
+      "id": "Dance",
+      "label": "Dance Groove",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Dance.json"
+    },
+    {
+      "id": "Peck",
+      "label": "Peck Ground",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/real_bird/Eating.json"
+    },
+    {
+      "id": "Walk",
+      "label": "Hop & Walk",
+      "category": "movement",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Sad_Walk.json"
+    },
+    {
+      "id": "Talking",
+      "label": "Chirp & Sing",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Talking.json"
+    },
+    {
+      "id": "Wing_Flap",
+      "label": "Wing Flap Joy",
+      "category": "emotion",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/bird/Happy.json"
+    },
+    {
+      "id": "Fly_Away",
+      "label": "Fly Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/bird_fly.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/bird/Fly.json"
+    },
+    {
+      "id": "Perch_Look_Away",
+      "label": "Perch Look Away (Back)",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/bird/Idle.json"
+    },
+    {
+      "id": "Hop_Away",
+      "label": "Hop Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/bird/Sad_Walk.json"
+    },
+    {
+      "id": "Wing_Tuck",
+      "label": "Wing Tuck Rest (Back)",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/bird/Idle.json"
+    }
+  ],
+  "lion": [
+    {
+      "id": "Frontal_Roar",
+      "label": "Apex Roar (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/expressive_animal/Angry.json"
+    },
+    {
+      "id": "Front_Pounce",
+      "label": "Forward Pounce (Front)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_jumping.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Jumping.json"
+    },
+    {
+      "id": "Front_Stare",
+      "label": "Dominant Stare (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Front_Lick",
+      "label": "Licking Jaws (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Roar",
+      "label": "3/4 Hunting Roar",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/expressive_animal/Angry.json"
+    },
+    {
+      "id": "Stalk",
+      "label": "Stealth Prowl",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Attack",
+      "label": "Pounce Attack",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Run",
+      "label": "Predator Sprint",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_run.gif",
+      "durationSeconds": 1.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json"
+    },
+    {
+      "id": "Walk",
+      "label": "Majestic Walk",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Eating",
+      "label": "Feast on Prey",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Drinking_Water",
+      "label": "Lap Water",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_drinking_water.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json"
+    },
+    {
+      "id": "Royal_Sit",
+      "label": "Royal Sphinx Sit",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Prowl_Away",
+      "label": "Prowl Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Resting_Back",
+      "label": "Resting Savior (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Tail_Flick",
+      "label": "Tail Warning (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Look_Back_Growl",
+      "label": "Look Over Shoulder Growl",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    }
+  ],
+  "bear": [
+    {
+      "id": "Front_Stand_Roar",
+      "label": "Two-Leg Roar (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.8,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Front_Claw_Slam",
+      "label": "Double Paw Slam (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Front_Intimidate",
+      "label": "Chest Puff Intimidate (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Stand_Roar",
+      "label": "Stand & Roar",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Claw_Swipe",
+      "label": "Claw Swipe",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Fishing",
+      "label": "Stream Salmon Fishing",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_drinking_water.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json"
+    },
+    {
+      "id": "Lumbering_Walk",
+      "label": "Lumbering Stride",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Heavy_Gallop",
+      "label": "Heavy Gallop Run",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_run.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json"
+    },
+    {
+      "id": "Honey_Eating",
+      "label": "Eating Honey & Berries",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Bear_Sit",
+      "label": "Boulder Sit",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Lumber_Away",
+      "label": "Lumber Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Hibernation_Sleep",
+      "label": "Hibernation Sleep (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 3,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Scratch_Tree",
+      "label": "Tree Back Scratch",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2.4,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    }
+  ],
+  "elephant": [
+    {
+      "id": "Front_Trumpet",
+      "label": "Trunk Trumpet (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Front_Water_Spray",
+      "label": "Shower Spray (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_drinking_water.gif",
+      "durationSeconds": 2.4,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json"
+    },
+    {
+      "id": "Front_Ear_Fan",
+      "label": "Ear Fanning (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Trumpet",
+      "label": "Trunk Trumpet Call",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Heavy_Stride",
+      "label": "Heavy Stride Walk",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2.4,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Stomping_Charge",
+      "label": "Stomping Charge",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_run.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json"
+    },
+    {
+      "id": "Pluck_Leaves",
+      "label": "Pluck & Eat Leaves",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Water_Spray",
+      "label": "River Siphon Spray",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_drinking_water.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json"
+    },
+    {
+      "id": "Gentle_Sway",
+      "label": "Gentle Pendulum Sway",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Stride_Away",
+      "label": "Stride Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2.4,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Tail_Swish",
+      "label": "Tail Swish (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Tusk_Look_Back",
+      "label": "Tusk Glance (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    }
+  ],
+  "dog": [
+    {
+      "id": "Front_Bark",
+      "label": "Bark & Woof (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 1.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Front_Beg",
+      "label": "Two-Paw Beg (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Front_Pant",
+      "label": "Happy Panting (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Bark",
+      "label": "Bark Alert",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 1.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Trotting_Walk",
+      "label": "Trotting Walk",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Canine_Sprint",
+      "label": "Fast Canine Sprint",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_run.gif",
+      "durationSeconds": 1.2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json"
+    },
+    {
+      "id": "Playful_Pounce",
+      "label": "Playful Pounce Bow",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_jumping.gif",
+      "durationSeconds": 1.5,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Jumping.json"
+    },
+    {
+      "id": "Bone_Munching",
+      "label": "Bone Munching",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Tail_Wag",
+      "label": "Tail Wagging Joy",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Trot_Away",
+      "label": "Trot Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Digging_Hole",
+      "label": "Digging Hole (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Tail_Wag_Back",
+      "label": "Back Tail Wag",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    }
+  ],
+  "animal": [
+    {
+      "id": "Front_Roar",
+      "label": "Roar & Call (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Front_Alert",
+      "label": "Alert Stance (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    },
+    {
+      "id": "Front_Pounce",
+      "label": "Forward Leap (Front)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_jumping.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Jumping.json"
+    },
+    {
+      "id": "Walk",
+      "label": "Quadruped Walk",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Run",
+      "label": "Wild Run",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_run.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json"
+    },
+    {
+      "id": "Attack",
+      "label": "Pounce Attack",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_attack.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json"
+    },
+    {
+      "id": "Eating",
+      "label": "Eating Grass & Food",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_eating.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json"
+    },
+    {
+      "id": "Drinking_Water",
+      "label": "Drinking Water",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_drinking_water.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json"
+    },
+    {
+      "id": "Sitting",
+      "label": "Sitting Rest",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Walk_Away",
+      "label": "Walk Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/animal_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json"
+    },
+    {
+      "id": "Rest_Back",
+      "label": "Resting (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_sitting.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json"
+    },
+    {
+      "id": "Look_Back",
+      "label": "Glance Over Shoulder",
+      "category": "basic",
+      "thumbnailUrl": "/animations/animal_idle.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json"
+    }
+  ],
+  "car": [
+    {
+      "id": "Front_Drive",
+      "label": "Drive Forward (Front)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_drive.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Drive.json"
+    },
+    {
+      "id": "Headlights_Flash",
+      "label": "Headlight Beams (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/car_drive_slow.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Drive_Slow.json"
+    },
+    {
+      "id": "Front_Honk",
+      "label": "Honk Vibration (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/car_collision.gif",
+      "durationSeconds": 1.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Collision.json"
+    },
+    {
+      "id": "Drive",
+      "label": "Cruising Drive",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_drive.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Drive.json"
+    },
+    {
+      "id": "Accelerate",
+      "label": "Turbo Accelerate",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_accelerate.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Accelerate.json"
+    },
+    {
+      "id": "Drifting",
+      "label": "Asphalt Drifting",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_drifting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Drifting.json"
+    },
+    {
+      "id": "Coasting",
+      "label": "Coasting Roll",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_coasting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Coasting.json"
+    },
+    {
+      "id": "Collision",
+      "label": "Collision Impact",
+      "category": "basic",
+      "thumbnailUrl": "/animations/car_collision.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/car/Collision.json"
+    },
+    {
+      "id": "Reversing",
+      "label": "Reversing (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_reversing.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/car/Reversing.json"
+    },
+    {
+      "id": "Exhaust_Smoke",
+      "label": "Exhaust Smoke (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/car_engine_smoke.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/car/Engine_Smoke.json"
+    },
+    {
+      "id": "Drive_Away",
+      "label": "Drive Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/car_drive.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/car/Drive.json"
+    }
+  ],
+  "human": [
+    {
+      "id": "Sitting_On_Knees",
+      "label": "Sitting On Knees",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Sitting_On_Knees.json",
+      "thumbnailUrl": "/animations/thumbnails/Sitting_On_Knees.gif",
+      "durationSeconds": 1.5,
+      "poseType": "sitting_knees"
+    },
+    {
+      "id": "Greeting",
+      "label": "Namaste / Greeting (Front)",
+      "category": "social",
+      "thumbnailUrl": "/animations/human_talking.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Sitting_Talking_Tea_Idle.json"
+    },
+    {
+      "id": "Presentation",
+      "label": "Presentation Bow (Front)",
+      "category": "social",
+      "thumbnailUrl": "/animations/human_cheering_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Cheering.json"
+    },
+    {
+      "id": "Straight_Idle",
+      "label": "Straight Idle (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_idle.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/human/Ak_47_Idle.json"
+    },
+    {
+      "id": "Front_Laughing",
+      "label": "Jovial Laugh (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/human_talking.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/human/Idle_Happy.json"
+    },
+    {
+      "id": "Front_Clapping",
+      "label": "Applauding (Front)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_claping_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Claping.json"
+    },
+    {
+      "id": "Front_Walk",
+      "label": "Walk Forward (Front)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/human_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    },
+    {
+      "id": "Walk",
+      "label": "3/4 Casual Walk",
+      "category": "movement",
+      "thumbnailUrl": "/animations/human_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    },
+    {
+      "id": "Run",
+      "label": "3/4 Dynamic Run",
+      "category": "movement",
+      "thumbnailUrl": "/animations/human_run.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Run.json"
+    },
+    {
+      "id": "Talking",
+      "label": "Dialogue & Gestures",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_talking.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/human/Talking_Expression.json"
+    },
+    {
+      "id": "Bollywood_Dance",
+      "label": "Bollywood Dance Groove",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_cheering_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Cheering.json"
+    },
+    {
+      "id": "Deep_Thinking",
+      "label": "Deep Thinking",
+      "category": "basic",
+      "thumbnailUrl": "",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/human/Idle_Sad.json"
+    },
+    {
+      "id": "Angry_Stance",
+      "label": "Angry Stance",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/human_angry.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/human/Idle_Angry.json"
+    },
+    {
+      "id": "Sitting",
+      "label": "Floor / Chair Sit",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_sitting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Fainting_While_Sitting.json"
+    },
+    {
+      "id": "Cooking",
+      "label": "Cooking Kitchen Stir",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_cooking_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Claping.json"
+    },
+    {
+      "id": "Walking_Away",
+      "label": "Walking Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/human_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    },
+    {
+      "id": "Look_Over_Shoulder",
+      "label": "Look Over Shoulder (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_idle.gif",
+      "durationSeconds": 2.2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/human/Ak_47_Idle.json"
+    },
+    {
+      "id": "Carrying_Burden",
+      "label": "Carrying Sack (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/human_walk.gif",
+      "durationSeconds": 2.5,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    },
+    {
+      "id": "Facing_Away_Idle",
+      "label": "Facing Scenery Idle (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/human_idle.gif",
+      "durationSeconds": 2.4,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/human/Ak_47_Idle.json"
+    },
+    {
+      "id": "Sneaking_Away",
+      "label": "Sneak Away (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/human_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    }
+  ],
+  "kid": [
+    {
+      "id": "Sitting_On_Knees",
+      "label": "Sitting On Knees",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Sitting_On_Knees.json",
+      "thumbnailUrl": "/animations/thumbnails/Sitting_On_Knees.gif",
+      "durationSeconds": 1.5,
+      "poseType": "sitting_knees"
+    },
+    {
+      "id": "Front_Greeting",
+      "label": "Two-Hand Wave (Front)",
+      "category": "social",
+      "thumbnailUrl": "/animations/kid_talking.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Sitting_Talking_Tea_Idle.json"
+    },
+    {
+      "id": "Front_Jumping",
+      "label": "Joy Jumping (Front)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/kid_cheering_hand_part.gif",
+      "durationSeconds": 1.8,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Cheering.json"
+    },
+    {
+      "id": "Front_Giggle",
+      "label": "Happy Giggle (Front)",
+      "category": "emotion",
+      "thumbnailUrl": "/animations/kid_talking.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Sitting_Talking_Tea_Idle.json"
+    },
+    {
+      "id": "Happy_Walk",
+      "label": "Happy Skip Walk",
+      "category": "movement",
+      "thumbnailUrl": "/animations/kid_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    },
+    {
+      "id": "Playful_Run",
+      "label": "Playful Run",
+      "category": "movement",
+      "thumbnailUrl": "/animations/kid_run.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Run.json"
+    },
+    {
+      "id": "Excited_Talking",
+      "label": "Excited Storytelling",
+      "category": "basic",
+      "thumbnailUrl": "/animations/kid_talking.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Sitting_Talking_Tea_Idle.json"
+    },
+    {
+      "id": "Sitting_Cross_Leg",
+      "label": "Sitting Cross-Legged",
+      "category": "basic",
+      "thumbnailUrl": "/animations/kid_sitting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Fainting_While_Sitting.json"
+    },
+    {
+      "id": "Bye_Bye_Wave",
+      "label": "Waving Bye Bye",
+      "category": "basic",
+      "thumbnailUrl": "/animations/kid_bye_bye_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Bye_Bye.json"
+    },
+    {
+      "id": "Claping_Hands",
+      "label": "Clapping Hands",
+      "category": "basic",
+      "thumbnailUrl": "/animations/kid_claping_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/kid/Claping.json"
+    },
+    {
+      "id": "Walking_To_School",
+      "label": "Walk with Backpack (Back)",
+      "category": "movement",
+      "thumbnailUrl": "/animations/kid_walk.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/kid/Carrying_Bori_on_Back_Walk.json"
+    },
+    {
+      "id": "Turn_Back_Wave",
+      "label": "Turn Back & Wave (Back)",
+      "category": "social",
+      "thumbnailUrl": "/animations/kid_bye_bye_hand_part.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/kid/Bye_Bye.json"
+    },
+    {
+      "id": "Sitting_Viewing",
+      "label": "Sitting Looking Away (Back)",
+      "category": "basic",
+      "thumbnailUrl": "/animations/kid_sitting.gif",
+      "durationSeconds": 2,
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/kid/Fainting_While_Sitting.json"
+    }
+  ],
+  "horse": [
+    {
+      "id": "Horse_Gallop_Stance",
+      "label": "Gallop Stance (Front)",
+      "category": "movement",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Angry_Idle.json",
+      "durationSeconds": 1.5
+    },
+    {
+      "id": "Horse_Whinny_Front",
+      "label": "Whinny Call (Front)",
+      "category": "basic",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Talking.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Horse_Trot_Front",
+      "label": "Front Trot (Front)",
+      "category": "movement",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json",
+      "durationSeconds": 1.2
+    },
+    {
+      "id": "Horse_Fast_Gallop",
+      "label": "Fast Gallop Run",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json",
+      "durationSeconds": 0.8
+    },
+    {
+      "id": "Horse_Trotting",
+      "label": "Trotting Stride",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json",
+      "durationSeconds": 1.2
+    },
+    {
+      "id": "Horse_Grazing",
+      "label": "Meadow Grazing",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json",
+      "durationSeconds": 2.5
+    },
+    {
+      "id": "Horse_Water_Drink",
+      "label": "Stream Drinking",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Horse_Prance",
+      "label": "Proud Stallion Prance",
+      "category": "emotion",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Jumping.json",
+      "durationSeconds": 1.6
+    },
+    {
+      "id": "Horse_Stable_Rest",
+      "label": "Stable Rest",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json",
+      "durationSeconds": 2.5
+    },
+    {
+      "id": "Horse_Gallop_Away",
+      "label": "Gallop Away (Back)",
+      "category": "movement",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json",
+      "durationSeconds": 0.8
+    },
+    {
+      "id": "Horse_Tail_Swish",
+      "label": "Tail Swish (Back)",
+      "category": "basic",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Idle.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Horse_Looking_Back",
+      "label": "Looking Back (Back)",
+      "category": "basic",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Lookarround.json",
+      "durationSeconds": 2.2
+    }
+  ],
+  "cow": [
+    {
+      "id": "Cow_Moo_Front",
+      "label": "Moo Greeting (Front)",
+      "category": "basic",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Talking.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Cow_Horn_Alert",
+      "label": "Horn Warning (Front)",
+      "category": "emotion",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json",
+      "durationSeconds": 1.5
+    },
+    {
+      "id": "Cow_Stand_Front",
+      "label": "Pasture Stand (Front)",
+      "category": "basic",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Idle.json",
+      "durationSeconds": 2.2
+    },
+    {
+      "id": "Cow_Chew_Walk",
+      "label": "Chewing Cud Walk",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json",
+      "durationSeconds": 1.5
+    },
+    {
+      "id": "Cow_Grazing",
+      "label": "Lush Grass Grazing",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json",
+      "durationSeconds": 2.5
+    },
+    {
+      "id": "Cow_Water_Trough",
+      "label": "Trough Drinking",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Drinking_Water.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Cow_Trot",
+      "label": "Gentle Pasture Trot",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk_Fast.json",
+      "durationSeconds": 1.2
+    },
+    {
+      "id": "Cow_Meadow_Rest",
+      "label": "Meadow Relax",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json",
+      "durationSeconds": 2.5
+    },
+    {
+      "id": "Cow_Deep_Sleep",
+      "label": "Pasture Sleep",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sleeping.json",
+      "durationSeconds": 3
+    },
+    {
+      "id": "Cow_Walk_Away",
+      "label": "Lumbering Away (Back)",
+      "category": "movement",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json",
+      "durationSeconds": 1.5
+    },
+    {
+      "id": "Cow_Tail_Swish",
+      "label": "Fly Swish Tail (Back)",
+      "category": "basic",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Idle.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Cow_Glance_Back",
+      "label": "Backward Glance (Back)",
+      "category": "basic",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Lookarround.json",
+      "durationSeconds": 2.2
+    }
+  ],
+  "monkey": [
+    {
+      "id": "Monkey_Chatter_Front",
+      "label": "Chattering Grin (Front)",
+      "category": "basic",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Talking.json",
+      "durationSeconds": 1.8
+    },
+    {
+      "id": "Monkey_Chest_Thump",
+      "label": "Chest Thump (Front)",
+      "category": "emotion",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Attack.json",
+      "durationSeconds": 1.4
+    },
+    {
+      "id": "Monkey_Curious_Stare",
+      "label": "Curious Stare (Front)",
+      "category": "basic",
+      "angles": [
+        "FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Idle.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Monkey_Branch_Leap",
+      "label": "Bough Tree Leap",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Jumping.json",
+      "durationSeconds": 1
+    },
+    {
+      "id": "Monkey_Eat_Fruit",
+      "label": "Eating Banana / Fruit",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Eating.json",
+      "durationSeconds": 2.2
+    },
+    {
+      "id": "Monkey_Scamper",
+      "label": "Agile Quadruped Scamper",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json",
+      "durationSeconds": 0.7
+    },
+    {
+      "id": "Monkey_Swing_Walk",
+      "label": "Tree Swing Walk",
+      "category": "movement",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Walk.json",
+      "durationSeconds": 1.1
+    },
+    {
+      "id": "Monkey_Perch_Groom",
+      "label": "Perched Grooming",
+      "category": "basic",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json",
+      "durationSeconds": 2.5
+    },
+    {
+      "id": "Monkey_Laugh_Tease",
+      "label": "Laughing Tease",
+      "category": "emotion",
+      "angles": [
+        "3/4 FRONT"
+      ],
+      "jsonUrl": "/animations/json/animal/Laugh.json",
+      "durationSeconds": 1.5
+    },
+    {
+      "id": "Monkey_Scamper_Away",
+      "label": "Scamper Away (Back)",
+      "category": "movement",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Run.json",
+      "durationSeconds": 0.8
+    },
+    {
+      "id": "Monkey_Over_Shoulder",
+      "label": "Over Shoulder Peek (Back)",
+      "category": "basic",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Lookarround.json",
+      "durationSeconds": 2
+    },
+    {
+      "id": "Monkey_Branch_Rest",
+      "label": "Branch Rest (Back)",
+      "category": "basic",
+      "angles": [
+        "3/4 BACK"
+      ],
+      "jsonUrl": "/animations/json/animal/Sitting.json",
+      "durationSeconds": 2.4
+    }
+  ]
+}

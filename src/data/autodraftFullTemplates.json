@@ -1,0 +1,145 @@
+[
+  {
+    "id": "village_walk",
+    "name": "Village Scene Walk",
+    "category": "Village",
+    "genre": "Moral",
+    "tags": [
+      "Village",
+      "Exterior",
+      "Moral",
+      "Story",
+      "Village exterior"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000335/2000335.png",
+    "description": "Indian rural dirt pathway framed by lush green trees, distant mud houses, and open skies.",
+    "bgElements": {
+      "sky": "linear-gradient(to bottom, #38bdf8 0%, #bae6fd 60%, #fef3c7 100%)",
+      "hills": true,
+      "trees": "banyan",
+      "ground": "dirt_path"
+    }
+  },
+  {
+    "id": "kirana_shop",
+    "name": "Kirana Shop Closed",
+    "category": "Village",
+    "genre": "Story",
+    "tags": [
+      "Village",
+      "Shop",
+      "Moral",
+      "Story",
+      "Village interior"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000342/2000342.png",
+    "description": "Indian village market grocery store with roll-down shutter and traditional brick veranda.",
+    "bgElements": {
+      "shutter": true,
+      "signboard": "SHREE GANESH KIRANA STORE"
+    }
+  },
+  {
+    "id": "western_kitchen",
+    "name": "Western Kitchen 1",
+    "category": "Office",
+    "genre": "Explainer",
+    "tags": [
+      "Kitchen",
+      "Interior",
+      "Office",
+      "Explainer"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000344/2000344.png",
+    "description": "Modern domestic kitchen with cabinets, dining counter, and appliances.",
+    "bgElements": {
+      "kitchen": true
+    }
+  },
+  {
+    "id": "quiz_template_1",
+    "name": "GK Question Template 1",
+    "category": "Explainer",
+    "genre": "Explainer",
+    "tags": [
+      "Quiz",
+      "Explainer",
+      "Intro",
+      "Opening scene"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000402/2000402.png",
+    "description": "Popular YouTube Shorts & educational video template with question banner and 4 options.",
+    "bgElements": {
+      "quiz": true
+    }
+  },
+  {
+    "id": "guess_the_electronic",
+    "name": "Quiz 3 - Guess The Electronic",
+    "category": "Explainer",
+    "genre": "Kids",
+    "tags": [
+      "Quiz",
+      "Kids",
+      "Explainer",
+      "Rhyme"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000346/2000346.png",
+    "description": "Fun interactive quiz template with child cartoon character and product icons.",
+    "bgElements": {
+      "electronics": true
+    }
+  },
+  {
+    "id": "horror_forest",
+    "name": "AatmaLok Horror Tales - Haunted Forest",
+    "category": "Horror",
+    "genre": "Horror",
+    "tags": [
+      "Horror",
+      "Night",
+      "Story",
+      "Opening scene"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000347/2000347.png",
+    "description": "Spooky night jungle with full moon, twisted leafless trees, eerie fog, and haunted pathway.",
+    "bgElements": {
+      "moon": true,
+      "fog": true
+    }
+  },
+  {
+    "id": "sunset_farmer_hut",
+    "name": "Village Sunset & Farmer Huts",
+    "category": "Village",
+    "genre": "Moral",
+    "tags": [
+      "Village",
+      "Seasonal",
+      "Moral",
+      "Story"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000348/2000348.png",
+    "description": "Sunset golden hour over traditional Indian village houses, haystacks, and cowshed.",
+    "bgElements": {
+      "sunset": true
+    }
+  },
+  {
+    "id": "fairy_tales_castle",
+    "name": "Fairytale Kingdom & Rainbow (Pari Lok)",
+    "category": "Fairy Tales",
+    "genre": "Fairy Tales",
+    "tags": [
+      "Fairy tales",
+      "Kids",
+      "Story",
+      "Opening scene"
+    ],
+    "thumbnailUrl": "https://assets.autodraft.in/custom-models/CM2000343/2000343.png",
+    "description": "Magical pastel cloud castle with rainbow, sparkles, and fantasy hills.",
+    "bgElements": {
+      "rainbow": true
+    }
+  }
+]

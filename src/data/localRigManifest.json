@@ -1,0 +1,3623 @@
+{
+  "apsara_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "apsara_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "baba": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "bear": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "brahma_ji": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "buddha": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "buddhist_monk": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "christian_boy_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "christian_boy_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "christian_girl_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "ganesh": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "god_shiva": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "guliga": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "hanuman": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "indra_dev": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "jesus_christ": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kabir": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kartikeya": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "king_rama": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "krishna": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kumbhakarna": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "lakshman": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "lion": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "maa_durga": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "maa_kaali": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "maa_lakshmi": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "maa_parvati": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "maa_saraswati": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "maa_sita": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mahishasur": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "muslim_boy": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "muslim_boy2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "muslim_girl_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "muslim_man_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "muslim_woman_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "narad_muni": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "noah": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "nun": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pandit_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pandit_2_fix": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "pandit_2_new": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "panjurli": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pastor": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pope": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "prince_rama": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "queen_sita": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "radha": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "ram": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "ravana": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sadhu": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "sadhu_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "sadhu_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "sheikh": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "surya_dev": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "tantrik_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "virgin_mary": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "vishnu_ji": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "hippopotamus": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "blue_bird": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "parrot_red": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sparrow": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "cat": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "rhinoceros": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "e_rickshaw": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "wolf_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "polar_bear": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "blue_sparrow": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "female_crow": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "asiatic_elephant": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "white_rat": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bird_paanwala": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "donkey_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pig": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "tractor": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "bull": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "deer_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "yak": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "baby_elephant": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indian_truck_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "turtle": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "red_fish": {
+    "hasFront": false,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "bus_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "business_woman": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "charriot_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bird_munshi": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "goat_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "unicorn_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "jeep": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "fox": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "owl_surpanch": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pigeon": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sports_car_yellow": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "zebra": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bike": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sheep": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "panda": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "cycle": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sports_car_blue": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "fire_truck": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "bird_nurse": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "camel": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "owl": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "tiger": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bear_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "cow_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "crow": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "cow_4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "crocodile": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "eagle": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bird_priest": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bus": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "blue_family_car": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sports_car_orange": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "rani_chidiya": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "hyena": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "chick": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "ambulance": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "dog_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "cow_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bird_security_guard": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "police_car": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "wolf": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "black_rat": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mallard": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "peacock": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "golden_bird": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indian_truck": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "taxi_car": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "cheetah": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sports_car_black": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "donkey_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "buffalo": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indian_truck_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "hen": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "auto_rickshaw": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "sports_car_white": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "song_bird": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bullock_cart": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "green_jeep": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "chicken": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bus_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bird_pandit": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "charriot_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "goat_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "monkey": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "unicorn_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "rabbit": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "blue_car": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "owl_milkman": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "green_auto": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "rabbit_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kolkata_taxi": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "family_car": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "blue_parrot": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "frog": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "post_van": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "pelican": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horse": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "dog_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "squirrel": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "dog_4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bail_gadi_open": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "lioness": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "red_jeep": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "deer": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "red_family_car": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "white_bird": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sports_car_red": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "cow_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "dog_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "akbar": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "aurangzeb": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "bengali_woman": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bhagat_singh": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "birbal": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "boy_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "boy_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "boy_10": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "boy_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "boy_4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "boy_5": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png"
+  },
+  "boy_7": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png"
+  },
+  "boy_9": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "bride_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "business_man": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "chandra_shekhar_azad": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "deepak": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "female_waiter": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "fisherman": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "girl_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "girl_in_dress_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "girl_in_dress_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "groom_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "groom_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "gujarati_boy1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "gujarati_girl1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "gujarati_girl2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "jawaharlal_nehru": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kid_girl_5": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_boy1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "kids_boy10": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy15": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy16": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy17": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "kids_boy3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_boy4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_boy5": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_boy6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy8_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy9": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "kids_girl10": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl15": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl16": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl17": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl18": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_girl2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "kids_girl3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "kids_girl5_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_girl6_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl7_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl9": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "king1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "king2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "king_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "king_4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "king_5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "king_6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mahatma_gandhi": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mantri": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mantri_2": {
+    "hasFront": false,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "maratha_warrior": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mask_man_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "modern_bahu": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "muhammad_ghori": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_man_9": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "old_man_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_man_8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "old_man2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "old_man3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_man4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_man5": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_man7": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_women_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "old_women_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "postman": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "prakash": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "prince": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "princess": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "queen_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "ramesh": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png"
+  },
+  "ramlal": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "senapati": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "shubhash_chandra_bose": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sipahi": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "sipahi_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "sipahi_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "soldier": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "suresh": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png"
+  },
+  "village_girl_4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_boy_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_girl_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_man_20": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_boy1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_boy2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_girl": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_girl2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_10": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_12": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_14": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_15": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_16": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_17": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_18": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_19": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_man_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_21": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_man_22": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_man_23": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_man_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_5": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_6": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_7": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_man_8": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_9": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_10": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_women_11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_15": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "village_women_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "village_women_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_women_6": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "village_women_7": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_women_8": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_women_9": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_boy10": {
+    "hasFront": false,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_boy6": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "western_boy8": {
+    "hasFront": true,
+    "hasBack": false,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp"
+  },
+  "western_girl16": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_boy37": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "woman_lehenga_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "woman_lehenga_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "woman_lehenga_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "woman_lehenga_4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "woman_lehenga_5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "woman_lehenga_6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "young_politician": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kid_boy_1_fix": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_man_11": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "women_in_dress": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "women_in_dress_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "apple_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "asparagus_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "avocado": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "avocado_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "banana_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "banana_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "blueberry": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "brocoli": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "corn": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "fairy_kid": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "garlic": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "girl_in_tshirt": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "horror_boy_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy18": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy8_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy_4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_boy_5": {
+    "hasFront": false,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_boy_6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy_7": {
+    "hasFront": false,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_girl6_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_girl7": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "kids_girl7_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "lemon": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mango": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "melon": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "orange_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "orange_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "pineapple_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "potato_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "radish_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "raspberry": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "strawberry_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "watermelon": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "apple_new": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "apricot": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "strawberry_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "business_man_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "corporate_man_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "corporate_man_3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "corporate_woman_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "corporate_man_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "corporate_woman_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "cow_boy": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "cow_girl": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "female_cop": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "fire_man": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "forest_gaurd": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indian_policeman": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_boy_8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kids_girl13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "king_7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "korean_boy": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "male_cop": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mermaid": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mermaid_2_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mermaid_2_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "modern_army_commander": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "modern_army_soldier": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "office_woman": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "princess_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "princess_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "queen": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl_25": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl_49": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy17_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_boy11": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_boy12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy16": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy17_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy18_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy18_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy19_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy19_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_boy20": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy21": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_boy22": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy23": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy24": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy25": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy26": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy27": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy28": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy29": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_boy4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy7": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_boy9": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_girl1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_girl10": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_girl11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl12": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_girl13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl15": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl17": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl18": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl19": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl21": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl23": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl24": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl26": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl28": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl29": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_girl30": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl31": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl32": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl33": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl34": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl35": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl36": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl37": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_girl38_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl38_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl39": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_girl40": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl41": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl42": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl43": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl44": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl45": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl46": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl47": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl48": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl5": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "western_girl6": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_girl7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_girl9": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_man17": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man18": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_man19": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man1_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man1_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man2_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man2_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_man7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man10": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man5": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "western_old_man6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_man8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_women_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_old_women_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy30": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy31": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy32": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy33": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_boy34": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_women_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "western_women_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "bhediya": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "frankenstein_monster": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "genie": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_old_woman_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_boy_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_boy_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_boy_4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_doctor": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "horror_man10": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man15": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "horror_man3": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "horror_man4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "horror_man5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man8_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man8_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_man9": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_nun": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_old_man_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_old_man_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_old_man_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_old_woman_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_old_woman_4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_policeman": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "horror_woman2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.webp"
+  },
+  "horror_woman3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "horror_woman_10": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_14": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_15": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_16": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_17": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_18": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_19": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_21": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_22": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_23": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_24": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_25": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_26": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_27": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_28": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_29": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_30": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_31": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "horror_woman_8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "joker": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "kankal": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "kankal_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "mask_man_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mask_man_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mummy": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "rakshas_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "rakshas_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "rakshas_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "sadhu_4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "tribal_man": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "anand": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "angel": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "barber": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "chef": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "constable": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "couriar": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "deepak_kurta": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "deepak_lungi": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "deepak_v2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "diya": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "doctor": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "doctor_1": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "doctor_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "electrician": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "fairy_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "fairy_2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "ghanshaym": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "indonesian_girl2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_girl3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_girl4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_man": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "indonesian_man3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_man4": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "indonesian_man5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_man6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_police": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "indonesian_woman10": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman11": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman12": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman13": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman2": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "indonesian_woman3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman4": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman5": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman6": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman7": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman8": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "indonesian_woman9": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "jaya": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "john": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "judge": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "lawyer": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "mahesh": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "meena": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "mohit": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "neha": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "neha_business": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "neha_new": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "neha_salvar": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "nikhil": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "nurse_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "nurse_2": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "nurse_3": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "police": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  },
+  "princess_new": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "raghunath": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "ramu_kaka": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "ritu": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "robbot": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "rohan": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "roshan": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "sahil": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "sameer": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "santa": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "satish": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "scientist": {
+    "hasFront": false,
+    "hasBack": false,
+    "defaultImg": "atlas.webp"
+  },
+  "shankar": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "siya": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "sundar": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "tara": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "tina": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.webp",
+    "backImg": "atlas_back.webp"
+  },
+  "village_women_1": {
+    "hasFront": true,
+    "hasBack": true,
+    "defaultImg": "atlas.webp",
+    "frontImg": "atlas_front.png",
+    "backImg": "atlas_back.png"
+  }
+}
