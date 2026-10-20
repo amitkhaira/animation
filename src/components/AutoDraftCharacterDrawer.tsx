@@ -14,7 +14,7 @@ interface AutoDraftCharacterDrawerProps {
   onSelectAction: (action: CharacterActionType, jsonUrl?: string) => void;
 }
 
-export const AutoDraftCharacterDrawer: React.FC<AutoDraftCharacterDrawerProps> = ({
+const AutoDraftCharacterDrawerComponent: React.FC<AutoDraftCharacterDrawerProps> = ({
   selectedCharacter,
   selectedAngle,
   selectedAction,
@@ -430,3 +430,5 @@ export const AutoDraftCharacterDrawer: React.FC<AutoDraftCharacterDrawerProps> =
     </div>
   );
 };
+
+export const AutoDraftCharacterDrawer = React.memo(AutoDraftCharacterDrawerComponent);

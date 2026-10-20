@@ -260,6 +260,8 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
   const [initialCharPos, setInitialCharPos] = useState<{ x: number; y: number }>({ x: 0, y: 0 });
   const [stageWidth, setStageWidth] = useState<number>(880);
   const stageRef = useRef<HTMLDivElement>(null);
+  const dragRafRef = useRef<number | null>(null);
+  const pendingEventRef = useRef<{ clientX: number; clientY: number } | null>(null);
 
   useEffect(() => {
     if (!stageRef.current) return;
@@ -306,89 +308,103 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
     setStartPos({ x: e.clientX, y: e.clientY });
   };
 
-  // 4. Mouse Move for all transforms
+  // 4. Mouse Move for all transforms with requestAnimationFrame throttling
   const handleStageMouseMove = (e: React.MouseEvent) => {
     if (!dragMode || (!dragCharId && !dragMediaId)) return;
+    pendingEventRef.current = { clientX: e.clientX, clientY: e.clientY };
 
-    if (dragMode === 'move') {
-      const stageRect = stageRef.current?.getBoundingClientRect();
-      const deltaX = (e.clientX - startPos.x) / zoom;
-      const deltaY = (e.clientY - startPos.y) / zoom;
+    if (dragRafRef.current !== null) return;
 
-      if (dragMediaId) {
-        const targetMedia = canvasMediaLayers?.find((m) => m.instanceId === dragMediaId);
-        if (targetMedia?.isTemplateLayer) {
-          const stageScale = stageRect && stageRect.width > 0 ? stageRect.width / 853.3333333333334 : 1;
-          onUpdateMediaPosition?.(
-            dragMediaId,
-            Math.round(initialCharPos.x + deltaX / stageScale),
-            Math.round(initialCharPos.y + deltaY / stageScale)
-          );
-        } else if (initialCharPos.x <= 100 && stageRect && stageRect.width > 0) {
-          const deltaPctX = (deltaX / stageRect.width) * 100;
-          const deltaPctY = (deltaY / stageRect.height) * 100;
-          onUpdateMediaPosition?.(
-            dragMediaId,
-            parseFloat((initialCharPos.x + deltaPctX).toFixed(1)),
-            parseFloat((initialCharPos.y + deltaPctY).toFixed(1))
-          );
-        } else {
-          onUpdateMediaPosition?.(dragMediaId, Math.round(initialCharPos.x + deltaX), Math.round(initialCharPos.y + deltaY));
+    dragRafRef.current = requestAnimationFrame(() => {
+      dragRafRef.current = null;
+      const coords = pendingEventRef.current;
+      if (!coords || !dragMode) return;
+
+      if (dragMode === 'move') {
+        const stageRect = stageRef.current?.getBoundingClientRect();
+        const deltaX = (coords.clientX - startPos.x) / zoom;
+        const deltaY = (coords.clientY - startPos.y) / zoom;
+
+        if (dragMediaId) {
+          const targetMedia = canvasMediaLayers?.find((m) => m.instanceId === dragMediaId);
+          if (targetMedia?.isTemplateLayer) {
+            const stageScale = stageRect && stageRect.width > 0 ? stageRect.width / 853.3333333333334 : 1;
+            onUpdateMediaPosition?.(
+              dragMediaId,
+              Math.round(initialCharPos.x + deltaX / stageScale),
+              Math.round(initialCharPos.y + deltaY / stageScale)
+            );
+          } else if (initialCharPos.x <= 100 && stageRect && stageRect.width > 0) {
+            const deltaPctX = (deltaX / stageRect.width) * 100;
+            const deltaPctY = (deltaY / stageRect.height) * 100;
+            onUpdateMediaPosition?.(
+              dragMediaId,
+              parseFloat((initialCharPos.x + deltaPctX).toFixed(1)),
+              parseFloat((initialCharPos.y + deltaPctY).toFixed(1))
+            );
+          } else {
+            onUpdateMediaPosition?.(dragMediaId, Math.round(initialCharPos.x + deltaX), Math.round(initialCharPos.y + deltaY));
+          }
+          return;
         }
-        return;
-      }
 
-      if (dragCharId) {
-        if (initialCharPos.x <= 100 && stageRect && stageRect.width > 0) {
-          const deltaPctX = (deltaX / stageRect.width) * 100;
-          const deltaPctY = (deltaY / stageRect.height) * 100;
-          onUpdateCharacterPosition(
-            dragCharId,
-            parseFloat((initialCharPos.x + deltaPctX).toFixed(1)),
-            parseFloat((initialCharPos.y + deltaPctY).toFixed(1))
-          );
-        } else {
-          onUpdateCharacterPosition(dragCharId, Math.round(initialCharPos.x + deltaX), Math.round(initialCharPos.y + deltaY));
+        if (dragCharId) {
+          if (initialCharPos.x <= 100 && stageRect && stageRect.width > 0) {
+            const deltaPctX = (deltaX / stageRect.width) * 100;
+            const deltaPctY = (deltaY / stageRect.height) * 100;
+            onUpdateCharacterPosition(
+              dragCharId,
+              parseFloat((initialCharPos.x + deltaPctX).toFixed(1)),
+              parseFloat((initialCharPos.y + deltaPctY).toFixed(1))
+            );
+          } else {
+            onUpdateCharacterPosition(dragCharId, Math.round(initialCharPos.x + deltaX), Math.round(initialCharPos.y + deltaY));
+          }
+        }
+      } else if (
+        dragMode === 'scale-tl' ||
+        dragMode === 'scale-tr' ||
+        dragMode === 'scale-bl' ||
+        dragMode === 'scale-br' ||
+        dragMode === 'scale-edge'
+      ) {
+        const deltaDist = (coords.clientY - startPos.y) / zoom;
+        const multiplier = dragMode === 'scale-tl' || dragMode === 'scale-tr' ? -1 : 1;
+        const scaleDelta = (deltaDist * multiplier) * 0.005;
+        const newScale = Math.max(0.05, Math.min(5.0, initialScale + scaleDelta));
+        if (onUpdateCharacterScale && dragCharId) {
+          onUpdateCharacterScale(dragCharId, parseFloat(newScale.toFixed(2)));
+        } else if (onUpdateMediaLayer && dragMediaId) {
+          onUpdateMediaLayer(dragMediaId, { scale: parseFloat(newScale.toFixed(2)) });
+        }
+      } else if (dragMode === 'rotate') {
+        const stageRect = stageRef.current?.getBoundingClientRect();
+        if (!stageRect) return;
+        const targetChar = characters.find((c) => c.instanceId === dragCharId);
+        if (!targetChar) return;
+
+        // Calculate center of character on screen
+        const isPercent = targetChar.x <= 100;
+        const charCenterX = stageRect.left + (isPercent ? (stageRect.width * targetChar.x) / 100 : targetChar.x);
+        const charCenterY = stageRect.top + (isPercent ? (stageRect.height * targetChar.y) / 100 : targetChar.y);
+
+        const rad = Math.atan2(coords.clientY - charCenterY, coords.clientX - charCenterX);
+        const deg = Math.round((rad * (180 / Math.PI)) + 90);
+        const normalizedDeg = (deg + 360) % 360;
+
+        if (onUpdateCharacterRotation && dragCharId) {
+          onUpdateCharacterRotation(dragCharId, normalizedDeg);
         }
       }
-    } else if (
-      dragMode === 'scale-tl' ||
-      dragMode === 'scale-tr' ||
-      dragMode === 'scale-bl' ||
-      dragMode === 'scale-br' ||
-      dragMode === 'scale-edge'
-    ) {
-      const deltaDist = (e.clientY - startPos.y) / zoom;
-      const multiplier = dragMode === 'scale-tl' || dragMode === 'scale-tr' ? -1 : 1;
-      const scaleDelta = (deltaDist * multiplier) * 0.005;
-      const newScale = Math.max(0.05, Math.min(5.0, initialScale + scaleDelta));
-      if (onUpdateCharacterScale && dragCharId) {
-        onUpdateCharacterScale(dragCharId, parseFloat(newScale.toFixed(2)));
-      } else if (onUpdateMediaLayer && dragMediaId) {
-        onUpdateMediaLayer(dragMediaId, { scale: parseFloat(newScale.toFixed(2)) });
-      }
-    } else if (dragMode === 'rotate') {
-      const stageRect = stageRef.current?.getBoundingClientRect();
-      if (!stageRect) return;
-      const targetChar = characters.find((c) => c.instanceId === dragCharId);
-      if (!targetChar) return;
-
-      // Calculate center of character on screen
-      const isPercent = targetChar.x <= 100;
-      const charCenterX = stageRect.left + (isPercent ? (stageRect.width * targetChar.x) / 100 : targetChar.x);
-      const charCenterY = stageRect.top + (isPercent ? (stageRect.height * targetChar.y) / 100 : targetChar.y);
-
-      const rad = Math.atan2(e.clientY - charCenterY, e.clientX - charCenterX);
-      const deg = Math.round((rad * (180 / Math.PI)) + 90);
-      const normalizedDeg = (deg + 360) % 360;
-
-      if (onUpdateCharacterRotation && dragCharId) {
-        onUpdateCharacterRotation(dragCharId, normalizedDeg);
-      }
-    }
+    });
   };
 
   const handleStageMouseUp = () => {
+    if (dragRafRef.current !== null) {
+      cancelAnimationFrame(dragRafRef.current);
+      dragRafRef.current = null;
+    }
+    pendingEventRef.current = null;
     setDragMode(null);
     setDragCharId(null);
     setDragMediaId(null);

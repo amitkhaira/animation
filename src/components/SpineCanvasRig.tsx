@@ -203,7 +203,7 @@ async function loadRigModel(charId: string, charName?: string, angle: CharacterA
   return promise;
 }
 
-export const SpineCanvasRig: React.FC<SpineCanvasRigProps> = ({
+const SpineCanvasRigComponent: React.FC<SpineCanvasRigProps> = ({
   characterId,
   characterName = 'Character',
   angle = '3/4 FRONT',
@@ -227,7 +227,8 @@ export const SpineCanvasRig: React.FC<SpineCanvasRigProps> = ({
   const rafRef = useRef<number | null>(null);
   const [, setRegisteredCount] = useState<number>(0);
 
-  const dpr = typeof window !== 'undefined' ? Math.max(2, window.devicePixelRatio || 2) : 2;
+  // Cap DPR to 1.25 for crisp preview without quadrupling software rasterizer load
+  const dpr = typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 1.25) : 1;
   const isKneeling = action.toLowerCase().includes('knee') || action.toLowerCase().includes('sit');
   const targetWidth = width || 260;
   const targetHeight = height || (isKneeling ? 270 : 320);
@@ -445,17 +446,20 @@ export const SpineCanvasRig: React.FC<SpineCanvasRigProps> = ({
         });
       }
 
-      rafRef.current = requestAnimationFrame(renderFrame);
+      // Only request next frame if active playback is running
+      if (isPlayingRef.current) {
+        rafRef.current = requestAnimationFrame(renderFrame);
+      }
     };
 
     lastTimeRef.current = performance.now();
-    rafRef.current = requestAnimationFrame(renderFrame);
+    renderFrame(lastTimeRef.current);
 
     return () => {
       isRunning = false;
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
     };
-  }, [model, effectiveAnimName, isPlaying, speed, scale, flipH, pixelWidth, pixelHeight, dpr, onKinematicsUpdate]);
+  }, [model, effectiveAnimName, isPlaying, speed, scale, flipH, pixelWidth, pixelHeight, dpr, onKinematicsUpdate, currentTimeSeconds]);
 
   if (loadFailed || !model) {
     // Graceful fallback to image preview while loading or if no rig
@@ -515,3 +519,5 @@ export const SpineCanvasRig: React.FC<SpineCanvasRigProps> = ({
     </div>
   );
 };
+
+export const SpineCanvasRig = React.memo(SpineCanvasRigComponent);

@@ -183,6 +183,8 @@ export class SpineKinematicsModel {
   public bones: { name: string; parent?: string }[] = [];
   public isReady: boolean = false;
   public characterId?: string;
+  private cachedRenderer: SkeletonRenderer | null = null;
+  private lastRenderContext: CanvasRenderingContext2D | null = null;
 
   public loadFromData(
     skeletonJson: any,
@@ -428,10 +430,15 @@ export class SpineKinematicsModel {
     ctx.scale(flipH ? -effectiveScale : effectiveScale, -effectiveScale);
     ctx.translate(0, -yGroundOffset);
 
-    // Official Spine Canvas SkeletonRenderer (handles region.rotate, orig/offset trimming, meshes)
-    const renderer = new SkeletonRenderer(ctx);
-    renderer.triangleRendering = true;
-    renderer.draw(this.skeleton);
+    // Reusable Spine Canvas SkeletonRenderer (prevents 500,000 array allocations per second)
+    if (!this.cachedRenderer || this.lastRenderContext !== ctx) {
+      this.cachedRenderer = new SkeletonRenderer(ctx);
+      this.cachedRenderer.triangleRendering = true;
+      this.lastRenderContext = ctx;
+    } else {
+      (this.cachedRenderer as any).ctx = ctx;
+    }
+    this.cachedRenderer.draw(this.skeleton);
 
     ctx.restore();
   }

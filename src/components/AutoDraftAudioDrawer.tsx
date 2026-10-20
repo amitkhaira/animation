@@ -36,7 +36,7 @@ interface AutoDraftAudioDrawerProps {
   onUpdateAudioTrack: (trackId: string, updates: Partial<ActiveAudioTrack>) => void;
 }
 
-export const AutoDraftAudioDrawer: React.FC<AutoDraftAudioDrawerProps> = ({
+const AutoDraftAudioDrawerComponent: React.FC<AutoDraftAudioDrawerProps> = ({
   onClose,
   activeAudioTracks,
   onAddAudioTrack,
@@ -880,3 +880,5 @@ export const AutoDraftAudioDrawer: React.FC<AutoDraftAudioDrawerProps> = ({
     </div>
   );
 };
+
+export const AutoDraftAudioDrawer = React.memo(AutoDraftAudioDrawerComponent);

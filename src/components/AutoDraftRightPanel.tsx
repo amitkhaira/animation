@@ -41,7 +41,7 @@ interface AutoDraftRightPanelProps {
   stageCharacters?: ActiveCanvasCharacter[];
 }
 
-export const AutoDraftRightPanel: React.FC<AutoDraftRightPanelProps> = ({
+const AutoDraftRightPanelComponent: React.FC<AutoDraftRightPanelProps> = ({
   selectedCharacter,
   onUpdateScale,
   onToggleFlip,
@@ -609,3 +609,5 @@ export const AutoDraftRightPanel: React.FC<AutoDraftRightPanelProps> = ({
     </aside>
   );
 };
+
+export const AutoDraftRightPanel = React.memo(AutoDraftRightPanelComponent);
