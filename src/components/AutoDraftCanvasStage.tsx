@@ -167,57 +167,56 @@ const AutoDraftSceneBackground: React.FC<AutoDraftSceneBackgroundProps> = ({
   const baseHeight = 480;
   const effectiveScale = containerScale > 0 ? containerScale : (stageWidth > 0 ? stageWidth / baseWidth : 1);
 
-  if (dynamicBgLayers && dynamicBgLayers.length > 0) {
-    if (hasInteractiveLayers) {
-      return <div className="absolute inset-0 pointer-events-none overflow-hidden bg-[#87CEEB]" />;
-    }
-    return (
-      <div ref={containerRef} className="absolute inset-0 pointer-events-none overflow-hidden bg-[#87CEEB]">
-        <div
-          style={{
-            width: `${baseWidth}px`,
-            height: `${baseHeight}px`,
-            transform: `scale(${effectiveScale})`,
-            transformOrigin: 'top left',
-            position: 'absolute',
-            top: 0,
-            left: 0
-          }}
-        >
-          {dynamicBgLayers.map((layer, idx) => (
-            <img
-              key={`${layer.id}_${idx}`}
-              src={layer.url}
-              alt={layer.name}
-              className="absolute select-none pointer-events-none max-w-none max-h-none"
-              style={{
-                left: `${layer.x}px`,
-                top: `${layer.y}px`,
-                transform: `scale(${layer.scaleX * (layer.flipX ? -1 : 1)}, ${layer.scaleY}) rotate(${layer.rotation || 0}deg)`,
-                transformOrigin: 'top left',
-                opacity: layer.opacity !== undefined ? layer.opacity : 1,
-                zIndex: idx + 1
-              }}
-              onError={(e) => {
-                (e.currentTarget as HTMLElement).style.display = 'none';
-              }}
-            />
-          ))}
-        </div>
-      </div>
-    );
-  }
-
   return (
-    <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-95">
+    <div className="absolute inset-0 pointer-events-none overflow-hidden" data-stage-background="template">
+      {/* 1. Base High-Definition Scene Background */}
       <img
         src={template.backgroundUrl || template.thumbnailUrl}
         alt={template.name}
-        className="w-full h-full object-cover select-none pointer-events-none filter blur-[0.2px]"
+        crossOrigin="anonymous"
+        className="w-full h-full object-cover select-none pointer-events-none"
         onError={(e) => {
           (e.currentTarget as HTMLElement).style.display = 'none';
         }}
       />
+
+      {/* 2. Optional Dynamic Parallax Multi-Layers if present and not in interactive layer mode */}
+      {dynamicBgLayers && dynamicBgLayers.length > 0 && !hasInteractiveLayers && (
+        <div ref={containerRef} className="absolute inset-0 pointer-events-none overflow-hidden">
+          <div
+            style={{
+              width: `${baseWidth}px`,
+              height: `${baseHeight}px`,
+              transform: `scale(${effectiveScale})`,
+              transformOrigin: 'top left',
+              position: 'absolute',
+              top: 0,
+              left: 0
+            }}
+          >
+            {dynamicBgLayers.map((layer, idx) => (
+              <img
+                key={`${layer.id}_${idx}`}
+                src={layer.url}
+                alt={layer.name}
+                crossOrigin="anonymous"
+                className="absolute select-none pointer-events-none max-w-none max-h-none"
+                style={{
+                  left: `${layer.x}px`,
+                  top: `${layer.y}px`,
+                  transform: `scale(${layer.scaleX * (layer.flipX ? -1 : 1)}, ${layer.scaleY}) rotate(${layer.rotation || 0}deg)`,
+                  transformOrigin: 'top left',
+                  opacity: layer.opacity !== undefined ? layer.opacity : 1,
+                  zIndex: idx + 1
+                }}
+                onError={(e) => {
+                  (e.currentTarget as HTMLElement).style.display = 'none';
+                }}
+              />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

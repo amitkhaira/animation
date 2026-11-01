@@ -129,7 +129,12 @@ export const AutoDraftStudio: React.FC = () => {
         (t) => t.id === tplParam || t.name.toLowerCase().includes(tplParam.toLowerCase())
       );
       if (found && found.sampleCharacters && found.sampleCharacters.length > 0) {
-        return found.sampleCharacters.map((c) => ({ ...c, isLocked: true }));
+        return found.sampleCharacters.map((c) => ({
+          ...c,
+          isLocked: false,
+          startTime: 0,
+          duration: 15
+        }));
       }
     }
     return [];
@@ -912,12 +917,14 @@ export const AutoDraftStudio: React.FC = () => {
 
     // 2. If template has official sample characters, auto apply all of them on the canvas!
     if (template.sampleCharacters && template.sampleCharacters.length > 0) {
-      const lockedSampleCharacters = template.sampleCharacters.map((c) => ({
+      const activeSampleCharacters = template.sampleCharacters.map((c) => ({
         ...c,
-        isLocked: true
+        isLocked: false,
+        startTime: 0,
+        duration: totalDurationSeconds || 15
       }));
-      setCharactersOnStage(lockedSampleCharacters);
-      const firstChar = lockedSampleCharacters[0];
+      setCharactersOnStage(activeSampleCharacters);
+      const firstChar = activeSampleCharacters[0];
       setSelectedCharInstanceId(firstChar.instanceId);
       const found = AUTODRAFT_CHARACTERS.find((c) => c.id === firstChar.characterId);
       if (found) {
