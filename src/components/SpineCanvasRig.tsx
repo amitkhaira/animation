@@ -128,13 +128,7 @@ function getRigFileUrls(charId: string, charName?: string, angle: CharacterAngle
     }
   }
 
-  // Universal fallback to Pandit 2 Fix
-  const fallbackDir = `/characters/rigs/pandit_2_fix`;
-  return {
-    skelUrl: `${fallbackDir}/skeleton.json`,
-    atlasUrl: `${fallbackDir}/skeleton.atlas`,
-    imgUrl: `${fallbackDir}/atlas.webp`
-  };
+  return null;
 }
 
 async function loadRigModel(charId: string, charName?: string, angle: CharacterAngle = '3/4 FRONT'): Promise<SpineKinematicsModel | null> {
@@ -175,7 +169,7 @@ async function loadRigModel(charId: string, charName?: string, angle: CharacterA
       });
 
       const model = new SpineKinematicsModel();
-      model.loadFromData(skelJson, atlasText, img, charId);
+      model.loadFromData(skelJson, atlasText, img, charId, charName);
 
       // Register official AutoDraft Sitting_On_Knees animation track if present
       if (urls.skelUrl.includes('pandit_2_fix') && angle === '3/4 FRONT') {
@@ -230,8 +224,9 @@ const SpineCanvasRigComponent: React.FC<SpineCanvasRigProps> = ({
   // Cap DPR to 1.25 for crisp preview without quadrupling software rasterizer load
   const dpr = typeof window !== 'undefined' ? Math.min(window.devicePixelRatio || 1, 1.25) : 1;
   const isKneeling = action.toLowerCase().includes('knee') || action.toLowerCase().includes('sit');
-  const targetWidth = width || 260;
-  const targetHeight = height || (isKneeling ? 270 : 320);
+  const isSleeping = action.toLowerCase().includes('sleep') || action.toLowerCase().includes('lying') || action.toLowerCase().includes('bed');
+  const targetWidth = width || (isSleeping ? 320 : 260);
+  const targetHeight = height || (isSleeping ? 240 : isKneeling ? 270 : 320);
   const pixelWidth = Math.round(targetWidth * dpr);
   const pixelHeight = Math.round(targetHeight * dpr);
 
@@ -239,6 +234,15 @@ const SpineCanvasRigComponent: React.FC<SpineCanvasRigProps> = ({
   currentTimeSecondsRef.current = currentTimeSeconds;
   const isPlayingRef = useRef<boolean>(isPlaying);
   isPlayingRef.current = isPlaying;
+
+  const lastActionRef = useRef<string>(action);
+  useEffect(() => {
+    if (lastActionRef.current !== action) {
+      lastActionRef.current = action;
+      animTimeRef.current = 0;
+      lastTimeRef.current = performance.now();
+    }
+  }, [action]);
 
   // Load Model whenever characterId, characterName, or angle changes
   useEffect(() => {

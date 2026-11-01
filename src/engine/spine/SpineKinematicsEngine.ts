@@ -54,6 +54,12 @@ export function normalizeSpineCurves(animationsObj: any): any {
       const k1 = frames[i];
       if (!k1 || typeof k1 !== 'object') continue;
 
+      // Default missing properties so Spine does not read undefined / NaN
+      for (let ch = 0; ch < chNames.length; ch++) {
+        const prop = chNames[ch];
+        if (k1[prop] === undefined) k1[prop] = defaults[ch];
+      }
+
       // If last frame, remove any leftover curve
       if (i === frames.length - 1) {
         delete k1.curve;
@@ -118,16 +124,60 @@ export function normalizeSpineCurves(animationsObj: any): any {
     if (anObj.bones) {
       for (const boneName of Object.keys(anObj.bones)) {
         const b = anObj.bones[boneName];
-        if (b.rotate) convertTimeline(b.rotate, ['angle'], [0]);
+        if (b.rotate) {
+          for (const k of b.rotate) {
+            if (k && k.value === undefined && k.angle !== undefined) {
+              k.value = k.angle;
+            }
+            if (k && k.value === undefined) k.value = 0;
+          }
+          convertTimeline(b.rotate, ['value'], [0]);
+        }
         if (b.translate) convertTimeline(b.translate, ['x', 'y'], [0, 0]);
-        if (b.translatex) convertTimeline(b.translatex, ['x'], [0]);
-        if (b.translatey) convertTimeline(b.translatey, ['y'], [0]);
+        if (b.translatex) {
+          for (const k of b.translatex) {
+            if (k && k.value === undefined && k.x !== undefined) k.value = k.x;
+            if (k && k.value === undefined) k.value = 0;
+          }
+          convertTimeline(b.translatex, ['value'], [0]);
+        }
+        if (b.translatey) {
+          for (const k of b.translatey) {
+            if (k && k.value === undefined && k.y !== undefined) k.value = k.y;
+            if (k && k.value === undefined) k.value = 0;
+          }
+          convertTimeline(b.translatey, ['value'], [0]);
+        }
         if (b.scale) convertTimeline(b.scale, ['x', 'y'], [1, 1]);
-        if (b.scalex) convertTimeline(b.scalex, ['x'], [1]);
-        if (b.scaley) convertTimeline(b.scaley, ['y'], [1]);
+        if (b.scalex) {
+          for (const k of b.scalex) {
+            if (k && k.value === undefined && k.x !== undefined) k.value = k.x;
+            if (k && k.value === undefined) k.value = 1;
+          }
+          convertTimeline(b.scalex, ['value'], [1]);
+        }
+        if (b.scaley) {
+          for (const k of b.scaley) {
+            if (k && k.value === undefined && k.y !== undefined) k.value = k.y;
+            if (k && k.value === undefined) k.value = 1;
+          }
+          convertTimeline(b.scaley, ['value'], [1]);
+        }
         if (b.shear) convertTimeline(b.shear, ['x', 'y'], [0, 0]);
-        if (b.shearx) convertTimeline(b.shearx, ['x'], [0]);
-        if (b.sheary) convertTimeline(b.sheary, ['y'], [0]);
+        if (b.shearx) {
+          for (const k of b.shearx) {
+            if (k && k.value === undefined && k.x !== undefined) k.value = k.x;
+            if (k && k.value === undefined) k.value = 0;
+          }
+          convertTimeline(b.shearx, ['value'], [0]);
+        }
+        if (b.sheary) {
+          for (const k of b.sheary) {
+            if (k && k.value === undefined && k.y !== undefined) k.value = k.y;
+            if (k && k.value === undefined) k.value = 0;
+          }
+          convertTimeline(b.sheary, ['value'], [0]);
+        }
       }
     }
     if (anObj.slots) {
@@ -183,6 +233,7 @@ export class SpineKinematicsModel {
   public bones: { name: string; parent?: string }[] = [];
   public isReady: boolean = false;
   public characterId?: string;
+  public characterName?: string;
   private cachedRenderer: SkeletonRenderer | null = null;
   private lastRenderContext: CanvasRenderingContext2D | null = null;
 
@@ -190,10 +241,12 @@ export class SpineKinematicsModel {
     skeletonJson: any,
     atlasText: string,
     atlasImg: HTMLImageElement,
-    characterId?: string
+    characterId?: string,
+    characterName?: string
   ): void {
     this.atlasImage = atlasImg;
     this.characterId = characterId;
+    this.characterName = characterName;
 
     // 1. Spine 3.8 to 4.x JSON normalization bridge (IK, Transform, Path, Bone Inherit & Curves)
     const normalizedJson = JSON.parse(JSON.stringify(skeletonJson));
@@ -215,28 +268,53 @@ export class SpineKinematicsModel {
       }
     }
 
-    if (normalizedJson.ik && !normalizedJson.constraints) {
-      normalizedJson.constraints = normalizedJson.ik.map((item: any) => ({
-        type: 'ik',
-        ...item
-      }));
-    }
-    if (normalizedJson.transform) {
-      const transformConstraints = normalizedJson.transform.map((item: any) => ({
-        type: 'transform',
-        ...item
-      }));
-      normalizedJson.constraints = (normalizedJson.constraints || []).concat(transformConstraints);
-    }
-    if (normalizedJson.path) {
-      const pathConstraints = normalizedJson.path.map((item: any) => ({
-        type: 'path',
-        ...item
-      }));
-      normalizedJson.constraints = (normalizedJson.constraints || []).concat(pathConstraints);
+    // Convert Spine 3.8 IK, Transform, and Path constraints into Spine 4.x root.constraints
+    if (!normalizedJson.constraints) {
+      normalizedJson.constraints = [];
+      if (Array.isArray(normalizedJson.ik)) {
+        for (const item of normalizedJson.ik) {
+          normalizedJson.constraints.push({ ...item, type: 'ik' });
+        }
+      }
+      if (Array.isArray(normalizedJson.transform)) {
+        for (const item of normalizedJson.transform) {
+          normalizedJson.constraints.push({
+            ...item,
+            type: 'transform',
+            source: item.source || item.target
+          });
+        }
+      }
+      if (Array.isArray(normalizedJson.path)) {
+        for (const item of normalizedJson.path) {
+          normalizedJson.constraints.push({
+            ...item,
+            type: 'path',
+            target: item.target
+          });
+        }
+      }
+    } else {
+      // Ensure existing transform constraints have source populated
+      for (const c of normalizedJson.constraints) {
+        if (c.type === 'transform' && !c.source && c.target) {
+          c.source = c.target;
+        }
+      }
     }
 
+    // Convert Spine 3.8 slot color timelines to Spine 4.x rgba
     if (normalizedJson.animations) {
+      for (const anim of Object.values(normalizedJson.animations) as any[]) {
+        if (anim && anim.slots) {
+          for (const slot of Object.values(anim.slots) as any[]) {
+            if (slot && slot.color && !slot.rgba) {
+              slot.rgba = slot.color;
+              delete slot.color;
+            }
+          }
+        }
+      }
       normalizeSpineCurves(normalizedJson.animations);
     }
 
@@ -261,6 +339,7 @@ export class SpineKinematicsModel {
 
     // 5. AnimationState
     this.stateData = new AnimationStateData(this.skeletonData);
+    this.stateData.defaultMix = 0;
     this.state = new AnimationState(this.stateData);
 
     this.bones = this.skeleton.bones.map((b) => ({
@@ -280,8 +359,16 @@ export class SpineKinematicsModel {
       const loader = new AtlasAttachmentLoader(this.atlas);
       const parser = new SkeletonJson(loader);
       const normalizedAnim = JSON.parse(JSON.stringify(animData));
-      normalizeSpineCurves(normalizedAnim);
       const singleAnimMap = normalizedAnim[name] || normalizedAnim;
+      if (singleAnimMap && singleAnimMap.slots) {
+        for (const slot of Object.values(singleAnimMap.slots) as any[]) {
+          if (slot && slot.color && !slot.rgba) {
+            slot.rgba = slot.color;
+            delete slot.color;
+          }
+        }
+      }
+      normalizeSpineCurves(singleAnimMap);
       (parser as any).readAnimation(singleAnimMap, name, this.skeletonData);
     } catch (e) {
       console.warn(`[SpineKinematics] Failed to register custom animation ${name}:`, e);
@@ -312,7 +399,9 @@ export class SpineKinematicsModel {
     if (anim) {
       const dur = anim.duration || 1;
       const t = dur > 0 ? time % dur : 0;
+      this.state.clearTracks();
       const entry = this.state.setAnimation(0, anim.name, true);
+      entry.mixDuration = 0;
       entry.trackTime = t;
       this.state.apply(this.skeleton);
     }
@@ -373,25 +462,49 @@ export class SpineKinematicsModel {
     if (anim) {
       const dur = anim.duration || 1;
       const t = dur > 0 ? time % dur : 0;
+      this.state.clearTracks();
       const entry = this.state.setAnimation(0, anim.name, true);
+      entry.mixDuration = 0;
       entry.trackTime = t;
       this.state.apply(this.skeleton);
     }
 
     // Hide overlay props that should be controlled dynamically
+    const cid = (this.characterId || '').toLowerCase();
+    const cname = (this.characterName || '').toLowerCase();
     const isPandit = Boolean(
-      this.characterId &&
-      (this.characterId === '811550' ||
-       this.characterId.toLowerCase().includes('pandit') ||
-       this.characterId.toLowerCase().includes('sadhu'))
+      cid === '811550' ||
+      cid.includes('pandit') ||
+      cid.includes('sadhu') ||
+      cname.includes('pandit') ||
+      cname.includes('sadhu')
+    );
+    const isFemale = Boolean(
+      /women|girl|female|bride|queen|sita|radha|parvati|durga|kaali|saraswati|lakshmi|mother|aunt|lady|nun|mary/i.test(cid) ||
+      /women|girl|female|bride|queen|sita|radha|parvati|durga|kaali|saraswati|lakshmi|mother|aunt|lady|nun|mary/i.test(cname)
+    );
+
+    const hasTorso2 = this.skeleton.slots.some(
+      (s) => s.data.name === 'TORSO_2' && (s.pose.attachment !== null || Boolean(s.appliedPose && s.appliedPose.attachment !== null))
     );
 
     for (const slot of this.skeleton.slots) {
       if (slot.data.name === 'R_Props' || slot.data.name === 'L_Props') {
         slot.pose.attachment = null;
+        if (slot.appliedPose) slot.appliedPose.attachment = null;
       }
       if (isPandit && slot.data.name === 'Hair') {
         slot.pose.attachment = null;
+        if (slot.appliedPose) slot.appliedPose.attachment = null;
+      }
+      if (isFemale && slot.data.name === 'Beard') {
+        slot.pose.attachment = null;
+        if (slot.appliedPose) slot.appliedPose.attachment = null;
+      }
+      // If full-body deformable mesh TORSO_2 is present, hide the rigid duplicate TORSO region sprite
+      if (hasTorso2 && slot.data.name === 'TORSO') {
+        slot.pose.attachment = null;
+        if (slot.appliedPose) slot.appliedPose.attachment = null;
       }
     }
 
@@ -414,7 +527,6 @@ export class SpineKinematicsModel {
     const skelH = this.skeletonData.height && this.skeletonData.height > 0 ? this.skeletonData.height : 950;
     const skelY = this.skeletonData.y ?? -96;
 
-    const cid = (this.characterId || '').toLowerCase();
     const isVehicle = cid.includes('car') || cid.includes('vehic') || cid.includes('chariot') || cid.includes('cart') || cid.includes('truck');
     const isBird = cid.includes('bird') || cid.includes('crow') || cid.includes('eagle') || cid.includes('owl') || cid.includes('peacock') || cid.includes('pigeon') || cid.includes('sparrow') || cid.includes('hen');
 
