@@ -38,7 +38,7 @@ interface AutoDraftCanvasStageProps {
   onAIAnimate?: (prompt: string) => void;
 }
 
-type DragMode = 'move' | 'scale-tl' | 'scale-tr' | 'scale-bl' | 'scale-br' | 'scale-edge' | 'rotate' | null;
+type DragMode = 'move' | 'scale-tl' | 'scale-tr' | 'scale-bl' | 'scale-br' | 'scale-edge' | 'rotate' | 'path-end' | null;
 
 interface AutoDraftSceneBackgroundProps {
   template: SceneTemplate | null;
@@ -289,6 +289,17 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
     setInitialCharPos({ x: char.x, y: char.y });
   };
 
+  // 1b. Motion Path Destination Ghost Drag Handler (AutoDraft 1:1)
+  const handlePathEndMouseDown = (e: React.MouseEvent, char: ActiveCanvasCharacter) => {
+    if (char.isLocked || !char.motionPath) return;
+    e.stopPropagation();
+    onSelectCharacterInstance(char.instanceId);
+    setDragMode('path-end');
+    setDragCharId(char.instanceId);
+    setStartPos({ x: e.clientX, y: e.clientY });
+    setInitialCharPos({ x: char.motionPath.endX, y: char.motionPath.endY });
+  };
+
   // 2. Corner Scale Drag Handler
   const handleScaleMouseDown = (e: React.MouseEvent, char: ActiveCanvasCharacter, mode: DragMode) => {
     if (char.isLocked) return;
@@ -349,17 +360,55 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
         }
 
         if (dragCharId) {
+          const targetChar = characters.find((c) => c.instanceId === dragCharId);
+          let newX = initialCharPos.x;
+          let newY = initialCharPos.y;
+
           if (initialCharPos.x <= 100 && stageRect && stageRect.width > 0) {
             const deltaPctX = (deltaX / stageRect.width) * 100;
             const deltaPctY = (deltaY / stageRect.height) * 100;
-            onUpdateCharacterPosition(
-              dragCharId,
-              parseFloat((initialCharPos.x + deltaPctX).toFixed(1)),
-              parseFloat((initialCharPos.y + deltaPctY).toFixed(1))
-            );
+            newX = parseFloat((initialCharPos.x + deltaPctX).toFixed(1));
+            newY = parseFloat((initialCharPos.y + deltaPctY).toFixed(1));
+            onUpdateCharacterPosition(dragCharId, newX, newY);
           } else {
-            onUpdateCharacterPosition(dragCharId, Math.round(initialCharPos.x + deltaX), Math.round(initialCharPos.y + deltaY));
+            newX = Math.round(initialCharPos.x + deltaX);
+            newY = Math.round(initialCharPos.y + deltaY);
+            onUpdateCharacterPosition(dragCharId, newX, newY);
           }
+
+          // If character has motion path, keep start point synchronized
+          if (targetChar?.motionPath && onUpdateCharacterPath) {
+            onUpdateCharacterPath(dragCharId, {
+              ...targetChar.motionPath,
+              startX: newX,
+              startY: newY
+            });
+          }
+        }
+      } else if (dragMode === 'path-end' && dragCharId) {
+        const stageRect = stageRef.current?.getBoundingClientRect();
+        const targetChar = characters.find((c) => c.instanceId === dragCharId);
+        if (targetChar && targetChar.motionPath && stageRect && stageRect.width > 0) {
+          const deltaX = (coords.clientX - startPos.x) / zoom;
+          const deltaY = (coords.clientY - startPos.y) / zoom;
+          let newEndX: number;
+          let newEndY: number;
+
+          if (initialCharPos.x <= 100) {
+            const deltaPctX = (deltaX / stageRect.width) * 100;
+            const deltaPctY = (deltaY / stageRect.height) * 100;
+            newEndX = Math.max(2, Math.min(98, parseFloat((initialCharPos.x + deltaPctX).toFixed(1))));
+            newEndY = Math.max(2, Math.min(98, parseFloat((initialCharPos.y + deltaPctY).toFixed(1))));
+          } else {
+            newEndX = Math.round(initialCharPos.x + deltaX);
+            newEndY = Math.round(initialCharPos.y + deltaY);
+          }
+
+          onUpdateCharacterPath?.(dragCharId, {
+            ...targetChar.motionPath,
+            endX: newEndX,
+            endY: newEndY
+          });
         }
       } else if (
         dragMode === 'scale-tl' ||
@@ -641,11 +690,26 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
         {/* ============================================================= */}
         {/* SVG MOTION PATH TRAJECTORY LINES (AUTO-DRAFT STYLE)           */}
         {/* ============================================================= */}
-        <svg className="absolute inset-0 w-full h-full pointer-events-none z-10">
+        <svg className="absolute inset-0 w-full h-full pointer-events-none z-10 overflow-visible">
+          <defs>
+            <marker
+              id="path-arrow"
+              viewBox="0 0 10 10"
+              refX="6"
+              refY="5"
+              markerWidth="6"
+              markerHeight="6"
+              orient="auto-start-reverse"
+            >
+              <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+            </marker>
+          </defs>
           {characters.map((char) => {
             if (!char.motionPath) return null;
             const mp = char.motionPath;
             const isSelected = selectedCharInstanceId === char.instanceId;
+            const midX = (mp.startX + mp.endX) / 2;
+            const midY = (mp.startY + mp.endY) / 2;
             return (
               <g key={`path_${char.instanceId}`}>
                 {/* Dashed trajectory line */}
@@ -658,29 +722,116 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
                   strokeWidth={isSelected ? '2.5' : '1.5'}
                   strokeDasharray="6 4"
                   strokeOpacity={isSelected ? 0.95 : 0.45}
+                  markerEnd="url(#path-arrow)"
                 />
                 {/* Start Pin (Green) */}
                 <circle
                   cx={`${mp.startX}%`}
                   cy={`${mp.startY}%`}
-                  r="4.5"
+                  r="5"
                   fill="#22c55e"
                   stroke="#ffffff"
                   strokeWidth="1.5"
                 />
-                {/* End Pin (Red) */}
+                {/* End Pin (Cyan) */}
                 <circle
                   cx={`${mp.endX}%`}
                   cy={`${mp.endY}%`}
-                  r="4.5"
-                  fill="#ef4444"
+                  r="6"
+                  fill="#06b6d4"
                   stroke="#ffffff"
                   strokeWidth="1.5"
                 />
+                {/* Midpoint trajectory direction label */}
+                {isSelected && (
+                  <text
+                    x={`${midX}%`}
+                    y={`${midY - 2}%`}
+                    fill="#38bdf8"
+                    fontSize="10"
+                    fontWeight="bold"
+                    textAnchor="middle"
+                    className="select-none pointer-events-none font-mono"
+                    stroke="#0f172a"
+                    strokeWidth="3"
+                    paintOrder="stroke fill"
+                  >
+                    Path ➔
+                  </text>
+                )}
               </g>
             );
           })}
         </svg>
+
+        {/* ============================================================= */}
+        {/* MOTION PATH GHOST DESTINATION SHADOW CHARACTERS (AUTODRAFT)   */}
+        {/* ============================================================= */}
+        {characters.map((char) => {
+          if (!char.motionPath) return null;
+          const mp = char.motionPath;
+          const isSelected = selectedCharInstanceId === char.instanceId;
+          const charData = AUTODRAFT_CHARACTERS.find((c) => c.id === char.characterId) || AUTODRAFT_CHARACTERS[0];
+
+          const isPercent = mp.endX <= 100;
+          const leftVal = isPercent ? `${mp.endX}%` : `${mp.endX}px`;
+          const topVal = isPercent ? `${mp.endY}%` : `${mp.endY}px`;
+          const flipVal = char.flipH ? -1 : 1;
+          const curScale = (char.scale || 1.0) * (mp.endScale || 1.0);
+
+          return (
+            <div
+              key={`ghost_dest_${char.instanceId}`}
+              data-ghost-path-character="true"
+              onMouseDown={(e) => handlePathEndMouseDown(e, char)}
+              onClick={(e) => {
+                e.stopPropagation();
+                onSelectCharacterInstance(char.instanceId);
+              }}
+              style={{
+                left: leftVal,
+                top: topVal,
+                transform: `${isPercent ? 'translate(-50%, -50%) ' : ''}scale(${curScale})`,
+                transformOrigin: 'center center',
+                zIndex: 22
+              }}
+              className={`absolute select-none cursor-grab active:cursor-grabbing p-1 transition-transform duration-75 flex flex-col items-center justify-center group ${
+                isSelected ? 'ring-2 ring-dashed ring-cyan-400 rounded-xl bg-cyan-950/20' : 'opacity-40 hover:opacity-75'
+              }`}
+              title="Drag to adjust motion path destination (AutoDraft Destination Shadow)"
+            >
+              {/* Destination Floating Badge */}
+              <div className="absolute -top-7 px-2 py-0.5 rounded-full bg-[#12141e]/95 border border-cyan-400/70 text-[9px] font-bold text-cyan-300 flex items-center space-x-1 shadow-lg pointer-events-none whitespace-nowrap z-30">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-ping" />
+                <span>Destination (Move me)</span>
+              </div>
+
+              {/* Ghost Shadow Visual Puppet */}
+              <div
+                style={{
+                  transform: `scaleX(${flipVal})`,
+                  opacity: 0.55,
+                  filter: 'drop-shadow(0 0 12px rgba(6, 182, 212, 0.8)) saturate(0.85)'
+                }}
+                className="relative flex items-center justify-center pointer-events-none"
+              >
+                <CharacterAvatarPreview
+                  character={charData}
+                  angle={char.angle}
+                  action={char.action}
+                  jsonUrl={char.jsonUrl}
+                  isPlaying={false}
+                  scale={1.0}
+                />
+              </div>
+
+              {/* Drag Handle Pin Anchor */}
+              <div className="absolute -bottom-2 w-5 h-5 rounded-full bg-cyan-500 border-2 border-white shadow-xl flex items-center justify-center text-[9px] text-white font-extrabold pointer-events-none">
+                B
+              </div>
+            </div>
+          );
+        })}
 
         {/* Characters On Stage */}
         {characters.map((char) => {

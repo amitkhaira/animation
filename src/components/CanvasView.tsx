@@ -52,6 +52,13 @@ export const CanvasView: React.FC<CanvasViewProps> = ({
         const rigNode = new CharacterRigNode(puppet);
         rigNodeRef.current = rigNode;
         renderer.characterContainer.addChild(rigNode);
+
+        // Center the rig in the canvas
+        rigNode.position.set(
+          (renderer.app?.screen?.width ?? 640) / 2,
+          (renderer.app?.screen?.height ?? 400) / 2
+        );
+
         rigNode.setSelectedBone(selectedBoneId);
         rigNode.updatePose();
       }
@@ -82,6 +89,13 @@ export const CanvasView: React.FC<CanvasViewProps> = ({
       const rigNode = new CharacterRigNode(puppet);
       rigNodeRef.current = rigNode;
       rendererRef.current.characterContainer.addChild(rigNode);
+
+      // Center the rig in the canvas
+      rigNode.position.set(
+        (rendererRef.current.app?.screen?.width ?? 640) / 2,
+        (rendererRef.current.app?.screen?.height ?? 400) / 2
+      );
+
       rigNode.setSelectedBone(selectedBoneId);
       rigNode.updatePose();
     }

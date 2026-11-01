@@ -9,6 +9,7 @@ export class CharacterRigNode extends Container {
   private visualBodyGraphics: Graphics;
   private boneGraphics: Graphics;
   private jointsGraphics: Graphics;
+  private jointHitAreas: Graphics;
   private selectedBoneId: string | null = null;
   public onBoneSelect?: (boneId: string) => void;
 
@@ -20,11 +21,21 @@ export class CharacterRigNode extends Container {
     this.visualBodyGraphics = new Graphics();
     this.boneGraphics = new Graphics();
     this.jointsGraphics = new Graphics();
+    this.jointHitAreas = new Graphics();
 
-    // Layer order: Character Visual Body -> Bone Skeleton Overlay -> Joint Pivots
+    // Set eventMode and cursor on jointsGraphics for PixiJS v8 compatibility
+    this.jointsGraphics.eventMode = 'static';
+    this.jointsGraphics.cursor = 'pointer';
+
+    // Set eventMode and cursor on jointHitAreas for larger invisible click targets
+    this.jointHitAreas.eventMode = 'static';
+    this.jointHitAreas.cursor = 'pointer';
+
+    // Layer order: Character Visual Body -> Bone Skeleton Overlay -> Joint Pivots -> Joint Hit Areas (top)
     this.addChild(this.visualBodyGraphics);
     this.addChild(this.boneGraphics);
     this.addChild(this.jointsGraphics);
+    this.addChild(this.jointHitAreas);
 
     this.renderRig();
   }
@@ -49,6 +60,7 @@ export class CharacterRigNode extends Container {
     this.visualBodyGraphics.clear();
     this.boneGraphics.clear();
     this.jointsGraphics.clear();
+    this.jointHitAreas.clear();
 
     const { skeleton } = this.puppet;
     const template: CharacterTemplate = (this.puppet as any).template || CHARACTER_TEMPLATES.find(
@@ -251,8 +263,15 @@ export class CharacterRigNode extends Container {
         });
       }
 
-      // Draw joint pivot
-      this.jointsGraphics.circle(origin.x, origin.y, isSelected ? 5.5 : 3.5);
+      // Draw joint pivot (slightly larger for better visibility)
+      if (isSelected) {
+        // Outer glow ring for selected joint
+        this.jointsGraphics.circle(origin.x, origin.y, 9);
+        this.jointsGraphics.fill({ color: 0xf59e0b, alpha: 0.25 });
+        this.jointsGraphics.stroke({ width: 1.5, color: 0xf59e0b, alpha: 0.6 });
+      }
+
+      this.jointsGraphics.circle(origin.x, origin.y, isSelected ? 6 : 4);
       this.jointsGraphics.fill({
         color: isSelected ? 0xf59e0b : 0x10b981,
         alpha: isSelected ? 1.0 : 0.75
@@ -262,6 +281,10 @@ export class CharacterRigNode extends Container {
         color: 0xffffff,
         alpha: 0.9
       });
+
+      // Draw large transparent hit area circle (radius 10) for easier clicking
+      this.jointHitAreas.circle(origin.x, origin.y, 10);
+      this.jointHitAreas.fill({ color: 0xffffff, alpha: 0 });
     }
   }
 }

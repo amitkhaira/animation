@@ -34,13 +34,15 @@ interface AutoDraftSelectionToolbarProps {
     startY: number;
     endX: number;
     endY: number;
+    duration?: number;
+    delay?: number;
   } | undefined) => void;
   onSort: (action: 'front' | 'back' | 'forward' | 'backward') => void;
   onOpenProps: () => void;
   onAIAnimate?: (prompt: string) => void;
 }
 
-type ActivePopover = 'path' | 'speed' | 'ai' | 'mask' | 'adjust' | 'sort' | null;
+type ActivePopover = 'speed' | 'ai' | 'mask' | 'adjust' | 'sort' | null;
 
 export const AutoDraftSelectionToolbar: React.FC<AutoDraftSelectionToolbarProps> = ({
   selectedCharacter,
@@ -87,19 +89,54 @@ export const AutoDraftSelectionToolbar: React.FC<AutoDraftSelectionToolbarProps>
           <span className="font-medium text-[11px]">Flip</span>
         </button>
 
-        {/* 2. Path */}
-        <button
-          onClick={() => togglePopover('path')}
-          className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg hover:bg-[#252b3d] transition-colors ${
-            activePopover === 'path' || selectedCharacter.motionPath
-              ? 'bg-blue-600/30 text-blue-300 font-semibold'
-              : 'text-gray-300'
-          }`}
-          title="Motion Path"
-        >
-          <Route className="w-3.5 h-3.5 text-gray-300" />
-          <span className="font-medium text-[11px]">Path</span>
-        </button>
+        {/* 2. Path (AutoDraft 1:1: Direct toggle -> reveals destination shadow on canvas) */}
+        <div className="flex items-center">
+          <button
+            onClick={() => {
+              if (selectedCharacter.motionPath) {
+                onUpdatePath(undefined);
+              } else {
+                const sx = selectedCharacter.x;
+                const sy = selectedCharacter.y;
+                const isPct = sx <= 100;
+                const ex = isPct ? Math.min(92, sx + 25) : sx + 180;
+                const ey = sy;
+                onUpdatePath({
+                  type: 'linear',
+                  startX: sx,
+                  startY: sy,
+                  endX: ex,
+                  endY: ey,
+                  duration: 5
+                });
+              }
+            }}
+            className={`flex items-center space-x-1.5 px-2.5 py-1.5 rounded-lg hover:bg-[#252b3d] transition-colors ${
+              selectedCharacter.motionPath
+                ? 'bg-blue-600 text-white font-semibold shadow-sm'
+                : 'text-gray-300'
+            }`}
+            title={selectedCharacter.motionPath ? "Path active - drag destination shadow on canvas" : "Add Motion Path"}
+          >
+            <Route className="w-3.5 h-3.5" />
+            <span className="font-medium text-[11px]">Path</span>
+            {selectedCharacter.motionPath && (
+              <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse ml-0.5" />
+            )}
+          </button>
+          {selectedCharacter.motionPath && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                onUpdatePath(undefined);
+              }}
+              className="ml-0.5 p-1 hover:bg-red-500/20 text-gray-400 hover:text-red-400 rounded transition-colors"
+              title="Remove Motion Path"
+            >
+              <X className="w-3 h-3" />
+            </button>
+          )}
+        </div>
 
         {/* 3. Speed */}
         <button
@@ -231,52 +268,6 @@ export const AutoDraftSelectionToolbar: React.FC<AutoDraftSelectionToolbarProps>
             onChange={(e) => onUpdateSpeed(parseFloat(e.target.value))}
             className="w-full accent-blue-500 h-1.5 bg-gray-700 rounded cursor-pointer"
           />
-        </div>
-      )}
-
-      {/* Path Popover */}
-      {activePopover === 'path' && (
-        <div className="absolute top-11 bg-[#161822] border border-[#2c3246] rounded-xl p-3 shadow-2xl w-64 text-xs text-white z-50 animate-in fade-in zoom-in-95">
-          <div className="flex items-center justify-between pb-2 border-b border-[#252a3b] mb-2.5">
-            <span className="font-semibold text-gray-200">Motion Path</span>
-            <button onClick={() => setActivePopover(null)} className="text-gray-400 hover:text-white">
-              <X className="w-3.5 h-3.5" />
-            </button>
-          </div>
-          <div className="space-y-1.5">
-            {[
-              { id: 'none', label: 'None (Stationary)' },
-              { id: 'linear', label: 'Straight Line (Left to Right)' },
-              { id: 'arc', label: 'Curved Arc' },
-              { id: 'wave', label: 'Wave Motion' }
-            ].map((p) => {
-              const isActive = p.id === 'none' ? !selectedCharacter.motionPath : selectedCharacter.motionPath?.type === p.id;
-              return (
-                <button
-                  key={p.id}
-                  onClick={() => {
-                    if (p.id === 'none') {
-                      onUpdatePath(undefined);
-                    } else {
-                      onUpdatePath({
-                        type: p.id as any,
-                        startX: selectedCharacter.x,
-                        startY: selectedCharacter.y,
-                        endX: selectedCharacter.x + 30,
-                        endY: selectedCharacter.y
-                      });
-                    }
-                  }}
-                  className={`w-full flex items-center justify-between px-2.5 py-1.5 rounded-lg text-left text-[11px] transition-colors ${
-                    isActive ? 'bg-blue-600 text-white font-medium' : 'bg-[#1f2433] text-gray-300 hover:bg-[#282f42]'
-                  }`}
-                >
-                  <span>{p.label}</span>
-                  {isActive && <Check className="w-3 h-3 text-white" />}
-                </button>
-              );
-            })}
-          </div>
         </div>
       )}
 
