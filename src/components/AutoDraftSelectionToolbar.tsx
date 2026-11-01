@@ -101,13 +101,14 @@ export const AutoDraftSelectionToolbar: React.FC<AutoDraftSelectionToolbarProps>
                 const isPct = sx <= 100;
                 const ex = isPct ? Math.min(92, sx + 25) : sx + 180;
                 const ey = sy;
+                const dur = selectedCharacter.duration || 10;
                 onUpdatePath({
                   type: 'linear',
                   startX: sx,
                   startY: sy,
                   endX: ex,
                   endY: ey,
-                  duration: 5
+                  duration: dur
                 });
               }
             }}

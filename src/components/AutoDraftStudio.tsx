@@ -211,8 +211,8 @@ export const AutoDraftStudio: React.FC = () => {
     [audioTracks, selectedAudioTrackId]
   );
 
-  // 5. Playback Loop (Defaults to True so animations play immediately on load)
-  const [isPlaying, setIsPlaying] = useState<boolean>(true);
+  // 5. Playback Loop (Starts paused at 00:00 as expected in studio editors)
+  const [isPlaying, setIsPlaying] = useState<boolean>(false);
   const [currentTimeSeconds, setCurrentTimeSeconds] = useState<number>(0);
   const [playbackSpeed, setPlaybackSpeed] = useState<number>(1.0);
   const [totalDurationSeconds, setTotalDurationSeconds] = useState<number>(() => {
@@ -509,7 +509,12 @@ export const AutoDraftStudio: React.FC = () => {
   const handleTogglePlay = () => {
     setIsPlaying((prev) => {
       const next = !prev;
-      if (!next) {
+      if (next) {
+        // If playhead was at or near the end, automatically rewind to 0 to play from start
+        if (currentTimeSeconds >= totalDurationSeconds - 0.1) {
+          setCurrentTimeSeconds(0);
+        }
+      } else {
         // Paused: pause all audio elements
         audioElementsRef.current.forEach((audioEl) => {
           audioEl.pause();

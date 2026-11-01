@@ -852,11 +852,12 @@ export const AutoDraftCanvasStage: React.FC<AutoDraftCanvasStageProps> = ({
           let curScale = char.scale || 1.0;
 
           if (char.motionPath) {
-            const dur = char.motionPath.duration || 5;
+            const clipStart = char.startTime ?? 0;
+            const dur = char.motionPath.duration ?? char.duration ?? 10;
             const delay = char.motionPath.delay || 0;
-            const t = Math.max(0, (currentTimeSeconds || 0) - delay);
-            // Continuous loop through duration
-            const progress = dur > 0 ? (t % dur) / dur : 0;
+            const t = (currentTimeSeconds || 0) - clipStart - delay;
+            // Smooth progress from start point to destination across duration
+            const progress = dur > 0 ? Math.min(1, Math.max(0, t / dur)) : 0;
             curX = char.motionPath.startX + (char.motionPath.endX - char.motionPath.startX) * progress;
             curY = char.motionPath.startY + (char.motionPath.endY - char.motionPath.startY) * progress;
             if (char.motionPath.startScale !== undefined && char.motionPath.endScale !== undefined) {
